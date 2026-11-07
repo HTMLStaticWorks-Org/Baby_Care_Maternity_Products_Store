@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby & Maternity Products Collection | Baby Care & Maternity Store</title>
+    <meta name="description"
+        content="Explore everyday essentials designed to care for little ones and support moms through every stage of motherhood.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.364.0/dist/umd/lucide.min.js"></script>
+</head>
+
+<body>
+    <!-- 🧭 HEADER -->
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <a href="index.html" class="logo-brand">
+                <i data-lucide="baby"></i> Baby Care & Maternity
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="home-2.html">Home 2</a>
+                <a href="about.html">About</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="services.html">Services</a>
+                <a href="gift-sets.html">Gift Sets</a>
+                <a href="contact.html">Contact</a>
+                <!-- Toggles inside menu for mobile ONLY -->
+                <div class="mobile-show" style="gap: 1.5rem; margin-top: 1rem; margin-bottom: 2rem;">
+                    <button id="theme-toggle-mob" class="btn" title="Change Theme"
+                        style="background: none; color: inherit; padding: 0.75rem; border: 1px solid var(--border); border-radius: 12px; flex: 1;"><i
+                            data-lucide="moon"></i></button>
+                    <button id="rtl-toggle-mob" class="btn"
+                        style="background: none; color: inherit; padding: 0.75rem; border: 1px solid var(--border); border-radius: 12px; flex: 1;">RTL</button>
+                </div>
+
+                <a href="contact.html" class="btn btn-primary mobile-show"
+                    style="margin-top: 1rem; text-align: center;">Send Enquiry</a>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="btn-nav-utility mobile-hide" title="Change Theme">
+                    <i data-lucide="moon"></i>
+                </button>
+                <button id="rtl-toggle" class="btn-nav-utility mobile-hide" title="Switch Direction">
+                    <span>RTL</span>
+                </button>
+                <button id="mobile-menu-trigger"
+                    style="background: none; border: none; cursor: pointer; color: inherit; padding: 0.5rem;"
+                    aria-label="Toggle Navigation Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+                <a href="contact.html" class="btn btn-primary mobile-hide">Send Enquiry</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Interactive Category Wheel Hero -->
+        <section class="hero-wheel-section">
+            <div class="container" style="text-align: center;">
+                <div class="reveal-zoom" style="max-width: 820px; margin: 0 auto 2.5rem;">
+                    <div
+                        style="display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                        <span class="badge-summer float-bob">
+                            <i data-lucide="sparkles" style="width: 18px; color: var(--heading-text);"></i> CURATED
+                            PRODUCT COLLECTIONS
+                        </span>
+                        <span class="camp-note">Comfort for Babies. Support for Moms.</span>
+                    </div>
+                    <h1 style="margin: 1rem 0; color: var(--heading-text);">Discover Our Baby & Maternity Collection
+                    </h1>
+                    <p
+                        style="font-size: 1.2rem; font-weight: 400; opacity: 0.88; max-width: 680px; margin: 0 auto 2rem; color: var(--body-text);">
+                        Explore everyday essentials designed to care for little ones and support moms through every
+                        stage of motherhood.
+                    </p>
+                    <a href="#product-grid" class="btn btn-primary hero-btn">Explore Categories</a>
+                </div>
+
+                <!-- Central Category Orb & Satellite Cards -->
+                <div class="wheel-container reveal-up">
+                    <div class="wheel-center-orb float-bob"
+                        style="background: linear-gradient(135deg, var(--primary) 0%, #B8C9D8 100%); width: 210px; height: 210px; border: 4px solid var(--white); box-shadow: 0 16px 36px rgba(68,54,64,0.15);">
+                        <i data-lucide="baby"
+                            style="width: 48px; height: 48px; margin-bottom: 0.5rem; stroke: var(--heading-text);"></i>
+                        <span
+                            style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: 1.4rem; letter-spacing: 0.05em; color: var(--heading-text);">BABY
+                            CARE</span>
+                        <span style="font-size: 0.75rem; opacity: 0.9; color: var(--heading-text); font-weight: 700;">&
+                            MATERNITY</span>
+                    </div>
+
+                    <!-- 6 Interactive Activity Category Spheres -->
+                    <div class="wheel-orbit-grid">
+                        <div class="wheel-card" style="padding: 1.5rem 1rem;">
+                            <div
+                                style="background: rgba(216, 180, 200, 0.25); width: 54px; height: 54px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem;">
+                                <i data-lucide="shirt"
+                                    style="width: 26px; height: 26px; color: var(--heading-text);"></i>
+                            </div>
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.25rem;">BABY CLOTHING</h3>
+                            <p style="font-size: 0.8rem; opacity: 0.8;">Organic Rompers & Bodysuits</p>
+                        </div>
+
+                        <div class="wheel-card" style="padding: 1.5rem 1rem;">
+                            <div
+                                style="background: rgba(184, 201, 216, 0.3); width: 54px; height: 54px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem;">
+                                <i data-lucide="bed" style="width: 26px; height: 26px; color: var(--heading-text);"></i>
+                            </div>
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.25rem;">NEWBORN ESSENTIALS</h3>
+                            <p style="font-size: 0.8rem; opacity: 0.8;">Swaddles & Nursery Bedding</p>
+                        </div>
+
+                        <div class="wheel-card" style="padding: 1.5rem 1rem;">
+                            <div
+                                style="background: rgba(197, 213, 181, 0.35); width: 54px; height: 54px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem;">
+                                <i data-lucide="droplet"
+                                    style="width: 26px; height: 26px; color: var(--heading-text);"></i>
+                            </div>
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.25rem;">BABY SKINCARE</h3>
+                            <p style="font-size: 0.8rem; opacity: 0.8;">Gentle Wash & Lotions</p>
+                        </div>
+
+                        <div class="wheel-card" style="padding: 1.5rem 1rem;">
+                            <div
+                                style="background: rgba(232, 203, 168, 0.35); width: 54px; height: 54px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem;">
+                                <i data-lucide="milk"
+                                    style="width: 26px; height: 26px; color: var(--heading-text);"></i>
+                            </div>
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.25rem;">FEEDING & NURSING</h3>
+                            <p style="font-size: 0.8rem; opacity: 0.8;">Bottles, Bibs & Covers</p>
+                        </div>
+
+                        <div class="wheel-card" style="padding: 1.5rem 1rem;">
+                            <div
+                                style="background: rgba(216, 180, 200, 0.25); width: 54px; height: 54px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem;">
+                                <i data-lucide="heart"
+                                    style="width: 26px; height: 26px; color: var(--heading-text);"></i>
+                            </div>
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.25rem;">MATERNITY WEAR</h3>
+                            <p style="font-size: 0.8rem; opacity: 0.8;">Comfort Dresses & Bras</p>
+                        </div>
+
+                        <div class="wheel-card" style="padding: 1.5rem 1rem;">
+                            <div
+                                style="background: rgba(184, 201, 216, 0.3); width: 54px; height: 54px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem;">
+                                <i data-lucide="sparkles"
+                                    style="width: 26px; height: 26px; color: var(--heading-text);"></i>
+                            </div>
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.25rem;">MOM CARE</h3>
+                            <p style="font-size: 0.8rem; opacity: 0.8;">Pillows & Postpartum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Products Organized by Category Grid -->
+        <section id="product-grid" style="background: var(--bg);">
+            <div class="container">
+                <div class="reveal-up" style="text-align: center; margin-bottom: 4.5rem;">
+                    <span
+                        style="color: var(--heading-text); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem;">Everyday
+                        Essentials</span>
+                    <h2 style="margin-top: 0.8rem;">Browse by Category</h2>
+                    <p style="font-weight: 400; font-size: 1.1rem; opacity: 0.85; max-width: 600px; margin: 0 auto;">
+                        Each item is crafted with hypoallergenic materials, organic fabrics, and mother-first designs.
+                    </p>
+                </div>
+
+                <div class="grid-3 stagger-container" style="gap: 2rem;">
+                    <!-- Category 1: Baby Clothing -->
+                    <div class="card reveal-left" style="display: flex; flex-direction: column;">
+                        <div class="card-img-wrapper" style="position: relative;">
+                            <img src="https://images.unsplash.com/photo-1522771930-78848d9293e8?auto=format&fit=crop&w=800&q=80"
+                                alt="Baby Clothing">
+                            <span
+                                style="position: absolute; top: 1rem; right: 1rem; background: var(--primary); color: var(--heading-text); padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.75rem; font-weight: 700;">FROM
+                                $12</span>
+                        </div>
+                        <h3>Baby Clothing</h3>
+                        <p style="opacity: 0.85; margin-bottom: 1.5rem;">Buttery-soft organic cotton apparel designed
+                            with flat seams, fold-over mittens, and two-way safety zippers.</p>
+                        <ul style="margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.75rem;">
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--primary);"></i> Newborn Bodysuits</span>
+                                <strong style="color: var(--heading-text);">$24</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--primary);"></i> Baby Rompers</span>
+                                <strong style="color: var(--heading-text);">$28</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--primary);"></i> Cotton Sleepwear</span>
+                                <strong style="color: var(--heading-text);">$32</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--primary);"></i> Baby Socks & Mittens</span>
+                                <strong style="color: var(--heading-text);">$14</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--primary);"></i> Baby Caps</span>
+                                <strong style="color: var(--heading-text);">$12</strong>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-secondary"
+                            style="margin-top: auto; text-align: center;">Inquire About Clothing</a>
+                    </div>
+
+                    <!-- Category 2: Newborn Essentials -->
+                    <div class="card reveal" style="display: flex; flex-direction: column;">
+                        <div class="card-img-wrapper" style="position: relative;">
+                            <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=800&q=80"
+                                alt="Newborn Essentials">
+                            <span
+                                style="position: absolute; top: 1rem; right: 1rem; background: var(--secondary); color: var(--heading-text); padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.75rem; font-weight: 700;">FROM
+                                $18</span>
+                        </div>
+                        <h3>Newborn Essentials</h3>
+                        <p style="opacity: 0.85; margin-bottom: 1.5rem;">Foundational nursery staples creating a
+                            soothing, temperature-regulated sleep and nursery environment.</p>
+                        <ul style="margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.75rem;">
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--secondary);"></i> Swaddle Blankets</span>
+                                <strong style="color: var(--heading-text);">$26</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--secondary);"></i> Baby Bedding</span>
+                                <strong style="color: var(--heading-text);">$45</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--secondary);"></i> Muslin Cloths (3-Pack)</span>
+                                <strong style="color: var(--heading-text);">$18</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--secondary);"></i> Baby Towels</span>
+                                <strong style="color: var(--heading-text);">$22</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--secondary);"></i> Nursery Essentials</span>
+                                <strong style="color: var(--heading-text);">$38</strong>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-secondary"
+                            style="margin-top: auto; text-align: center;">Inquire About Essentials</a>
+                    </div>
+
+                    <!-- Category 3: Baby Care & Skincare -->
+                    <div class="card reveal-right" style="display: flex; flex-direction: column;">
+                        <div class="card-img-wrapper" style="position: relative;">
+                            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+                                alt="Baby Care & Skincare">
+                            <span
+                                style="position: absolute; top: 1rem; right: 1rem; background: var(--accent); color: var(--heading-text); padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.75rem; font-weight: 700;">FROM
+                                $14</span>
+                        </div>
+                        <h3>Baby Care & Skincare</h3>
+                        <p style="opacity: 0.85; margin-bottom: 1.5rem;">Pure plant-derived botanicals formulated
+                            specifically for delicate baby skin, cradle cap, and diaper barrier care.</p>
+                        <ul style="margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.75rem;">
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--accent);"></i> Baby Lotion</span>
+                                <strong style="color: var(--heading-text);">$18</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--accent);"></i> Gentle Baby Wash</span>
+                                <strong style="color: var(--heading-text);">$16</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--accent);"></i> Baby Shampoo</span>
+                                <strong style="color: var(--heading-text);">$16</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--accent);"></i> Diaper Rash Cream</span>
+                                <strong style="color: var(--heading-text);">$14</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--accent);"></i> Baby Grooming Kits</span>
+                                <strong style="color: var(--heading-text);">$30</strong>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-secondary"
+                            style="margin-top: auto; text-align: center;">Inquire About Skincare</a>
+                    </div>
+
+                    <!-- Category 4: Feeding & Nursing -->
+                    <div class="card reveal-left" style="display: flex; flex-direction: column;">
+                        <div class="card-img-wrapper" style="position: relative;">
+                            <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80"
+                                alt="Feeding & Nursing">
+                            <span
+                                style="position: absolute; top: 1rem; right: 1rem; background: var(--highlight); color: var(--heading-text); padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.75rem; font-weight: 700;">FROM
+                                $15</span>
+                        </div>
+                        <h3>Feeding & Nursing</h3>
+                        <p style="opacity: 0.85; margin-bottom: 1.5rem;">Ergonomic feeding essentials engineered for
+                            natural latching, comfortable nursing posture, and easy sanitizing.</p>
+                        <ul style="margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.75rem;">
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--highlight);"></i> Feeding Bottles</span>
+                                <strong style="color: var(--heading-text);">$22</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--highlight);"></i> Baby Bibs (Organic)</span>
+                                <strong style="color: var(--heading-text);">$15</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--highlight);"></i> Nursing Covers</span>
+                                <strong style="color: var(--heading-text);">$28</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--highlight);"></i> Breastfeeding Essentials</span>
+                                <strong style="color: var(--heading-text);">$36</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--highlight);"></i> Bottle Cleaning Accessories</span>
+                                <strong style="color: var(--heading-text);">$18</strong>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-secondary"
+                            style="margin-top: auto; text-align: center;">Inquire About Feeding</a>
+                    </div>
+
+                    <!-- Category 5: Maternity & Mom Care -->
+                    <div class="card reveal" style="display: flex; flex-direction: column;">
+                        <div class="card-img-wrapper" style="position: relative;">
+                            <img src="https://images.unsplash.com/photo-1516585427167-9f4af9627e6c?auto=format&fit=crop&w=800&q=80"
+                                alt="Maternity & Mom Care">
+                            <span
+                                style="position: absolute; top: 1rem; right: 1rem; background: var(--primary); color: var(--heading-text); padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.75rem; font-weight: 700;">FROM
+                                $34</span>
+                        </div>
+                        <h3>Maternity & Mom Care</h3>
+                        <p style="opacity: 0.85; margin-bottom: 1.5rem;">Supportive, graceful maternity apparel and
+                            postpartum wellness products designed to nurture the nurturer.</p>
+                        <ul style="margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.75rem;">
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--primary);"></i> Maternity Dresses</span>
+                                <strong style="color: var(--heading-text);">$58</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--primary);"></i> Nursing Bras</span>
+                                <strong style="color: var(--heading-text);">$34</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--primary);"></i> Maternity Pillows</span>
+                                <strong style="color: var(--heading-text);">$48</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--primary);"></i> Pregnancy Support Essentials</span>
+                                <strong style="color: var(--heading-text);">$42</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--primary);"></i> Postpartum Care Products</span>
+                                <strong style="color: var(--heading-text);">$38</strong>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-secondary"
+                            style="margin-top: auto; text-align: center;">Inquire About Maternity</a>
+                    </div>
+
+                    <!-- Category 6: Curated Gift Sets -->
+                    <div class="card reveal-right"
+                        style="display: flex; flex-direction: column; border-color: var(--primary);">
+                        <div class="card-img-wrapper" style="position: relative;">
+                            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80"
+                                alt="Curated Gift Collections">
+                            <span
+                                style="position: absolute; top: 1rem; right: 1rem; background: var(--secondary); color: var(--heading-text); padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.75rem; font-weight: 700;">GIFT
+                                BOXES</span>
+                        </div>
+                        <h3>Curated Gift Sets</h3>
+                        <p style="opacity: 0.85; margin-bottom: 1.5rem;">Pre-curated and customizable newborn hampers,
+                            baby shower bundles, and pampering new mom recovery boxes.</p>
+                        <ul style="margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.75rem;">
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--primary);"></i> Newborn Welcome Gift Box</span>
+                                <strong style="color: var(--heading-text);">$65</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--primary);"></i> Baby Shower Gift Set</span>
+                                <strong style="color: var(--heading-text);">$115</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--primary);"></i> Organic Baby Essentials Box</span>
+                                <strong style="color: var(--heading-text);">$89</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--primary);"></i> New Mom Care Package</span>
+                                <strong style="color: var(--heading-text);">$95</strong>
+                            </li>
+                            <li
+                                style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem;">
+                                <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check"
+                                        style="color: var(--primary);"></i> Luxury Newborn Gift Hamper</span>
+                                <strong style="color: var(--heading-text);">$165</strong>
+                            </li>
+                        </ul>
+                        <a href="gift-sets.html" class="btn btn-primary"
+                            style="margin-top: auto; text-align: center;">View All Gift Sets</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Safe, Pure & Gentle Standards -->
+        <section style="background: var(--bg-secondary, #F5EEF2);">
+            <div class="container">
+                <div class="grid-resp-2" style="align-items: center; gap: 4rem;">
+                    <div class="reveal-left">
+                        <span
+                            style="color: var(--heading-text); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem;">Quality
+                            Assured</span>
+                        <h2 style="margin: 0.8rem 0 1.25rem;">Safe, Pure & Gentle Standards</h2>
+                        <p style="font-size: 1.15rem; opacity: 0.85; margin-bottom: 2rem; line-height: 1.7;">Every
+                            product in our collection undergoes stringent safety, biocompatibility and skin sensitivity
+                            checks before it touches your little one's skin.</p>
+
+                        <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2.5rem;">
+                            <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                                <div
+                                    style="background: var(--primary); color: var(--heading-text); width: 40px; height: 40px; min-width: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">
+                                    1</div>
+                                <div>
+                                    <h4 style="font-size: 1.15rem; color: var(--heading-text);">100% GOTS Certified
+                                        Organic Cotton</h4>
+                                    <p style="opacity: 0.8; font-size: 0.95rem;">Unbleached, pesticide-free fibers
+                                        breathable enough to prevent overheating and rashes.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                                <div
+                                    style="background: var(--secondary); color: var(--heading-text); width: 40px; height: 40px; min-width: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">
+                                    2</div>
+                                <div>
+                                    <h4 style="font-size: 1.15rem; color: var(--heading-text);">Pediatrician &
+                                        Dermatologist Approved</h4>
+                                    <p style="opacity: 0.8; font-size: 0.95rem;">Tear-free bath formulas, non-nano zinc
+                                        oxide diaper balms, and natural soothing extracts.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                                <div
+                                    style="background: var(--accent); color: var(--heading-text); width: 40px; height: 40px; min-width: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">
+                                    3</div>
+                                <div>
+                                    <h4 style="font-size: 1.15rem; color: var(--heading-text);">Ergonomic Support for
+                                        Motherhood</h4>
+                                    <p style="opacity: 0.8; font-size: 0.95rem;">From body pillows that contour to
+                                        growing bumps to latch-support feeding accessories.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary" style="padding: 1rem 3rem;">Ask Our
+                            Specialists</a>
+                    </div>
+                    <div class="reveal-right" style="display: flex; justify-content: center;">
+                        <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=80"
+                            alt="Gentle baby care products"
+                            style="border-radius: 28px; border: 1px solid var(--border); box-shadow: 0 30px 60px rgba(68,54,64,0.1); width: 100%; max-width: 480px; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 🦶 FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid" style="margin-bottom: 4rem;">
+                <div>
+                    <a href="index.html" class="footer-logo">
+                        <i data-lucide="baby"></i> Baby Care & Maternity
+                    </a>
+                    <p
+                        style="opacity: 0.8; margin-bottom: 2rem; max-width: 320px; font-size: 0.95rem; line-height: 1.7; color: var(--soft-sand);">
+                        Thoughtfully selected baby essentials and maternity must-haves, crafted to make every moment of
+                        motherhood gentle and special.</p>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><svg viewBox="0 0 24 24"
+                                style="width: 18px; height: 18px; fill: currentColor; display: inline-block; vertical-align: middle;">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                </path>
+                            </svg></a>
+                        <a href="#"><i data-lucide="heart"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1.5rem; color: #FFFFFF;">Collections</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 0.75rem; opacity: 0.85;">
+                        <li><a href="products.html">Baby Clothing</a></li>
+                        <li><a href="products.html">Newborn Essentials</a></li>
+                        <li><a href="products.html">Baby Skincare</a></li>
+                        <li><a href="products.html">Feeding & Nursing</a></li>
+                        <li><a href="products.html">Maternity & Mom Care</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1.5rem; color: #FFFFFF;">Quick Links</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 0.75rem; opacity: 0.85;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gift-sets.html">Gift Sets</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1.5rem; color: #FFFFFF;">Customer Care</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 0.75rem; opacity: 0.85;">
+                        <li><i data-lucide="map-pin" style="color: var(--primary);"></i> 450 Little Sprout Way, New
+                            York, NY</li>
+                        <li><i data-lucide="phone" style="color: var(--primary);"></i> (800) 245-BABY</li>
+                        <li><i data-lucide="mail" style="color: var(--primary);"></i> support@babycarestore.com</li>
+                        <li><i data-lucide="clock" style="color: var(--primary);"></i> Mon – Sat: 9:00 AM – 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.15); padding-top: 2rem; text-align: center; opacity: 0.7; font-size: 0.9rem; color: var(--soft-sand);">
+                &copy; 2026 Baby Care & Maternity Products Store. All rights reserved. Gentle comfort for little
+                miracles.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ⬆️ BACK TO TOP -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top">
+        <i data-lucide="chevron-up"></i>
+    </button>
+
+    <script src="scripts/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+        });
+    </script>
+</body>
+
+</html>

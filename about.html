@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Our Boutique | Baby Care & Maternity Store</title>
+    <meta name="description"
+        content="Discover our journey, pediatric standards, and commitment to creating gentle, safe, and nurturing essentials for babies and mothers.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.364.0/dist/umd/lucide.min.js"></script>
+</head>
+
+<body>
+    <!-- 🧭 HEADER -->
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <a href="index.html" class="logo-brand">
+                <i data-lucide="baby"></i> Baby Care & Maternity
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="home-2.html">Home 2</a>
+                <a href="about.html" class="active">About</a>
+                <a href="products.html">Products</a>
+                <a href="services.html">Services</a>
+                <a href="gift-sets.html">Gift Sets</a>
+                <a href="contact.html">Contact</a>
+                <!-- Toggles inside menu for mobile ONLY -->
+                <div class="mobile-show" style="gap: 1.5rem; margin-top: 1rem; margin-bottom: 2rem;">
+                    <button id="theme-toggle-mob" class="btn" title="Change Theme"
+                        style="background: none; color: inherit; padding: 0.75rem; border: 1px solid var(--border); border-radius: 12px; flex: 1;"><i
+                            data-lucide="moon"></i></button>
+                    <button id="rtl-toggle-mob" class="btn"
+                        style="background: none; color: inherit; padding: 0.75rem; border: 1px solid var(--border); border-radius: 12px; flex: 1;">RTL</button>
+                </div>
+
+                <a href="contact.html" class="btn btn-primary mobile-show"
+                    style="margin-top: 1rem; text-align: center;">Send Enquiry</a>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="btn-nav-utility mobile-hide" title="Change Theme">
+                    <i data-lucide="moon"></i>
+                </button>
+                <button id="rtl-toggle" class="btn-nav-utility mobile-hide" title="Switch Direction">
+                    <span>RTL</span>
+                </button>
+                <button id="mobile-menu-trigger"
+                    style="background: none; border: none; cursor: pointer; color: inherit; padding: 0.5rem;" aria-label="Toggle Navigation Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+                <a href="contact.html" class="btn btn-primary mobile-hide">Send Enquiry</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Editorial Storytelling Hero -->
+        <section style="padding: 9rem 0 6rem; background: var(--bg); position: relative; overflow: hidden;">
+            <div class="blob-bg-1"
+                style="top: 0%; left: -5%; background: radial-gradient(circle, rgba(216, 180, 200, 0.3) 0%, transparent 70%);">
+            </div>
+            <div class="container" style="position: relative; z-index: 2;">
+                <div class="grid-resp-2" style="align-items: center; gap: 4rem;">
+                    <!-- Left Story Content Group -->
+                    <div class="reveal-left">
+                        <div
+                            style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                            <span class="badge-summer float-bob">
+                                <i data-lucide="heart" style="width: 16px; color: var(--heading-text);"></i> OUR STORY
+                            </span>
+                            <span class="badge-forest">Founded with Love & Care</span>
+                        </div>
+
+                        <h1 style="margin-bottom: 1.25rem; color: var(--heading-text);">Little Beginnings, Beautifully
+                            Cared For.</h1>
+
+                        <p
+                            style="font-size: 1.15rem; line-height: 1.7; opacity: 0.9; margin-bottom: 2rem; font-weight: 400; color: var(--body-text);">
+                            Founded by pediatric specialists and mothers, our boutique was born from a simple belief:
+                            the first days of life and every stage of motherhood deserve gentle, safe, and nurturing
+                            essentials crafted with pure love.
+                        </p>
+
+                        <div style="display: flex; gap: 1.25rem; flex-wrap: wrap; align-items: center;">
+                            <a href="products.html" class="btn btn-primary hero-btn">Explore Our Collection</a>
+                            <span class="camp-note">crafted for comfort</span>
+                        </div>
+                    </div>
+
+                    <!-- Right Single Photography Composition -->
+                    <div class="reveal-right" style="position: relative;">
+                        <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=800&q=80"
+                            alt="Loving Mother and Newborn Baby"
+                            style="width: 100%; height: 400px; object-fit: cover; border-radius: 28px; box-shadow: 0 20px 45px rgba(68, 54, 64, 0.12); border: 4px solid var(--white);">
+
+                        <!-- Floating Stat Card -->
+                        <div style="position: absolute; top: 20px; right: 20px; z-index: 4; background: var(--card-bg); border: 2px solid var(--primary); padding: 0.85rem 1.25rem; border-radius: 20px; box-shadow: 0 12px 30px rgba(0,0,0,0.1);"
+                            class="reveal-zoom">
+                            <div
+                                style="font-size: 1.25rem; font-weight: 700; color: var(--heading-text); font-family: 'Cormorant Garamond', Georgia, serif;">
+                                15,000+</div>
+                            <div
+                                style="font-size: 0.75rem; font-weight: 700; color: var(--heading-text); opacity: 0.8;">
+                                HAPPY FAMILIES</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Story & Mission -->
+        <section style="background: var(--bg-secondary, #F5EEF2); padding: 6rem 0;">
+            <div class="container">
+                <div class="grid-resp-2" style="align-items: stretch; gap: 3.5rem;">
+                    <div class="reveal-left" style="display: flex; flex-direction: column; justify-content: center;">
+                        <span class="badge-summer float-bob" style="width: fit-content; margin-bottom: 1rem;">
+                            <i data-lucide="book-open" style="width: 16px; color: var(--heading-text);"></i> OUR MISSION
+                        </span>
+                        <h2 style="margin: 0.5rem 0 1.5rem; color: var(--heading-text);">Thoughtfully Nurturing
+                            Motherhood</h2>
+                        <p
+                            style="font-size: 1.1rem; line-height: 1.8; opacity: 0.88; margin-bottom: 1.5rem; color: var(--body-text);">
+                            We curate pure organic clothing, hypoallergenic nursery bedding, certified gentle bath care,
+                            and supportive maternity wear that empowers new moms to feel grounded, confident, and
+                            celebrated.</p>
+                        <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.88; color: var(--body-text);">Every
+                            fabric weave is dermatologist-tested, chemical-free, and ethically sourced. We believe
+                            peaceful beginnings create a lifetime of flourishing health.</p>
+                    </div>
+                    <div class="reveal-right" style="display: flex; align-items: stretch; height: 100%;">
+                        <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=80"
+                            alt="Gentle baby care"
+                            style="border-radius: 28px; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(68,54,64,0.1); width: 100%; height: 100%; min-height: 380px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Core Pillars -->
+        <section style="background: var(--card-bg);">
+            <div class="container">
+                <div class="reveal-up" style="text-align: center; margin-bottom: 4.5rem;">
+                    <span
+                        style="color: var(--heading-text); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem;">Guiding
+                        Principles</span>
+                    <h2 style="margin-top: 0.8rem;">Our 3 Core Commitments</h2>
+                    <p style="opacity: 0.8; font-size: 1.05rem;">The heart of everything we select, curate, and
+                        hand-package.</p>
+                </div>
+
+                <div class="grid-3" style="gap: 2rem;">
+                    <div class="card reveal-left" style="text-align: center; padding: 3rem 2rem;">
+                        <div
+                            style="background: var(--bg); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; color: var(--heading-text);">
+                            <i data-lucide="shield-check"
+                                style="width: 38px; height: 38px; stroke: var(--primary);"></i>
+                        </div>
+                        <h3>100% Baby-Friendly & Safe</h3>
+                        <p style="opacity: 0.85; font-size: 0.95rem; line-height: 1.6;">Certified GOTS organic cotton,
+                            nickel-free snaps, and natural botanicals completely free from parabens and artificial dyes.
+                        </p>
+                    </div>
+
+                    <div class="card blur-in"
+                        style="text-align: center; padding: 3rem 2rem; border-color: var(--primary);">
+                        <div
+                            style="background: var(--bg); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; color: var(--heading-text);">
+                            <i data-lucide="heart" style="width: 38px; height: 38px; stroke: var(--secondary);"></i>
+                        </div>
+                        <h3>Comfort for Moms & Babies</h3>
+                        <p style="opacity: 0.85; font-size: 0.95rem; line-height: 1.6;">Designed for ergonomic nursing,
+                            restorative postpartum healing, and temperature-regulated newborn sleep.</p>
+                    </div>
+
+                    <div class="card reveal-right" style="text-align: center; padding: 3rem 2rem;">
+                        <div
+                            style="background: var(--bg); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; color: var(--heading-text);">
+                            <i data-lucide="gift" style="width: 38px; height: 38px; stroke: var(--accent);"></i>
+                        </div>
+                        <h3>Heirloom Gifting Collections</h3>
+                        <p style="opacity: 0.85; font-size: 0.95rem; line-height: 1.6;">Signature keepsake packaging,
+                            satin ribbons, and personalized handwritten cards that honor life's greatest milestones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3.5: Safety & Purity Banner -->
+        <section class="hero-safety-banner reveal-zoom">
+            <div class="container">
+                <div
+                    style="display: flex; gap: 3rem; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+                    <div style="max-width: 650px;">
+                        <span class="badge-summer"
+                            style="background: var(--primary); color: #443640; border: 1px solid rgba(255,255,255,0.4);">
+                            <i data-lucide="shield-check" style="width: 18px; color: #443640;"></i> Purity &
+                            Biocompatibility
+                        </span>
+                        <h2 style="color: white; margin: 1.5rem 0 1rem;">Gentle Purity is Our Sacred Promise</h2>
+                        <p style="opacity: 0.95; font-size: 1.1rem; line-height: 1.7; color: var(--soft-sand);">
+                            Every fabric and skincare formula is dermatologist-tested, hypoallergenic, and formulated
+                            without sulfates, phthalates, synthetic perfumes, or harsh allergens.
+                        </p>
+                        <div class="trust-badge-row">
+                            <div class="trust-pill"><i data-lucide="check" style="color: var(--primary);"></i> GOTS
+                                Organic Certified</div>
+                            <div class="trust-pill"><i data-lucide="check" style="color: var(--secondary);"></i>
+                                Pediatrician Tested</div>
+                            <div class="trust-pill"><i data-lucide="check" style="color: var(--accent);"></i>
+                                Hypoallergenic & Pure</div>
+                        </div>
+                    </div>
+                    <div
+                        style="background: rgba(255,255,255,0.08); border: 2px solid rgba(255,255,255,0.2); border-radius: 32px; padding: 2.5rem; text-align: center; backdrop-filter: blur(12px); min-width: 280px;">
+                        <i data-lucide="award"
+                            style="width: 64px; height: 64px; color: var(--primary); margin-bottom: 1rem;"></i>
+                        <h3
+                            style="color: white; margin-bottom: 0.5rem; font-family: 'Cormorant Garamond', Georgia, serif;">
+                            100% Certified</h3>
+                        <p style="font-size: 0.9rem; opacity: 0.85; color: white;">Trusted by pediatricians and new
+                            mothers worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Boutique Specialists Team -->
+        <section style="background: var(--bg);">
+            <div class="container">
+                <div class="reveal-zoom" style="text-align: center; margin-bottom: 4.5rem;">
+                    <span
+                        style="color: var(--heading-text); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem;">Caring
+                        Hands</span>
+                    <h2 style="margin-top: 0.8rem;">Our Care Specialists</h2>
+                    <p style="opacity: 0.8; font-size: 1.05rem;">Certified pediatric nurses, lactation consultants, and
+                        maternity stylists dedicated to your family.</p>
+                </div>
+
+                <div class="grid-3" style="gap: 2rem;">
+                    <div class="card reveal-left" style="text-align: center;">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80"
+                            alt="Clara Vance"
+                            style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; object-position: center; margin: 0 auto 1.5rem; border: 4px solid var(--primary);">
+                        <h3 style="color: var(--heading-text);">Clara Vance, RN</h3>
+                        <p style="color: var(--heading-text); font-weight: 600; margin-bottom: 0.75rem; opacity: 0.85;">
+                            Founder & Pediatric Nurse</p>
+                        <p style="opacity: 0.8; font-size: 0.9rem; line-height: 1.6;">15+ years guiding new mothers
+                            through newborn swaddling, calming routines, and biocompatible skincare.</p>
+                    </div>
+
+                    <div class="card blur-in" style="text-align: center;">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80"
+                            alt="Maya Lin"
+                            style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; object-position: center; margin: 0 auto 1.5rem; border: 4px solid var(--secondary);">
+                        <h3 style="color: var(--heading-text);">Maya Lin, IBCLC</h3>
+                        <p style="color: var(--heading-text); font-weight: 600; margin-bottom: 0.75rem; opacity: 0.85;">
+                            Lactation & Feeding Lead</p>
+                        <p style="opacity: 0.8; font-size: 0.9rem; line-height: 1.6;">Specialist in ergonomic nursing
+                            comfort, natural latching bottles, and fourth-trimester mom care.</p>
+                    </div>
+
+                    <div class="card reveal-right" style="text-align: center;">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80"
+                            alt="Hannah Ross"
+                            style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; object-position: center; margin: 0 auto 1.5rem; border: 4px solid var(--accent);">
+                        <h3 style="color: var(--heading-text);">Hannah Ross</h3>
+                        <p style="color: var(--heading-text); font-weight: 600; margin-bottom: 0.75rem; opacity: 0.85;">
+                            Nursery Stylist & Gift Curator</p>
+                        <p style="opacity: 0.8; font-size: 0.9rem; line-height: 1.6;">Designing serene baby nurseries
+                            and curating bespoke milestone baby shower gift boxes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Milestones -->
+        <section style="background: var(--card-bg); padding: 6rem 0;">
+            <div class="container">
+                <div class="reveal-zoom" style="text-align: center; margin-bottom: 4rem;">
+                    <span class="badge-summer float-bob" style="margin-bottom: 1rem; display: inline-flex;">
+                        <i data-lucide="sparkles" style="width: 16px; color: var(--heading-text);"></i> OUR JOURNEY
+                    </span>
+                    <h2 style="margin-top: 0.5rem; color: var(--heading-text);">Our Boutique Milestones</h2>
+                    <p style="opacity: 0.85; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">Over a decade of
+                        caring for mothers and wrapping little miracles in comfort.</p>
+                </div>
+
+                <div class="grid-4 stagger-container" style="gap: 1.5rem;">
+                    <div class="reveal-up card"
+                        style="padding: 2.5rem 1.75rem; position: relative; border-radius: 24px; border: 1px solid var(--border); transition: all 0.4s ease;">
+                        <div
+                            style="background: rgba(216, 180, 200, 0.25); color: var(--heading-text); padding: 0.4rem 1rem; border-radius: 50px; font-weight: 700; font-size: 0.9rem; width: fit-content; margin-bottom: 1.5rem;">
+                            2014</div>
+                        <div
+                            style="background: var(--bg); width: 56px; height: 56px; border-radius: 16px; display: flex; align-items: center; justify-content: center; color: var(--heading-text); margin-bottom: 1.25rem;">
+                            <i data-lucide="baby" style="width: 28px; height: 28px; stroke: var(--primary);"></i>
+                        </div>
+                        <h4 style="margin-bottom: 0.75rem; font-size: 1.2rem; color: var(--heading-text);">Boutique
+                            Founded</h4>
+                        <p style="opacity: 0.8; font-size: 0.95rem; line-height: 1.6;">Started with 10 pure organic
+                            cotton bodysuits in our flagship New York studio.</p>
+                    </div>
+
+                    <div class="reveal-up card"
+                        style="padding: 2.5rem 1.75rem; position: relative; border-radius: 24px; border: 1px solid var(--border); transition: all 0.4s ease;">
+                        <div
+                            style="background: rgba(184, 201, 216, 0.3); color: var(--heading-text); padding: 0.4rem 1rem; border-radius: 50px; font-weight: 700; font-size: 0.9rem; width: fit-content; margin-bottom: 1.5rem;">
+                            2018</div>
+                        <div
+                            style="background: var(--bg); width: 56px; height: 56px; border-radius: 16px; display: flex; align-items: center; justify-content: center; color: var(--heading-text); margin-bottom: 1.25rem;">
+                            <i data-lucide="layers" style="width: 28px; height: 28px; stroke: var(--secondary);"></i>
+                        </div>
+                        <h4 style="margin-bottom: 0.75rem; font-size: 1.2rem; color: var(--heading-text);">Skincare &
+                            Maternity Lines</h4>
+                        <p style="opacity: 0.8; font-size: 0.95rem; line-height: 1.6;">Expanded into
+                            dermatologist-tested bath botanicals and supportive nursing wear.</p>
+                    </div>
+
+                    <div class="reveal-up card"
+                        style="padding: 2.5rem 1.75rem; position: relative; border-radius: 24px; border: 1px solid var(--border); transition: all 0.4s ease;">
+                        <div
+                            style="background: rgba(197, 213, 181, 0.35); color: var(--heading-text); padding: 0.4rem 1rem; border-radius: 50px; font-weight: 700; font-size: 0.9rem; width: fit-content; margin-bottom: 1.5rem;">
+                            2022</div>
+                        <div
+                            style="background: var(--bg); width: 56px; height: 56px; border-radius: 16px; display: flex; align-items: center; justify-content: center; color: var(--heading-text); margin-bottom: 1.25rem;">
+                            <i data-lucide="gift" style="width: 28px; height: 28px; stroke: var(--accent);"></i>
+                        </div>
+                        <h4 style="margin-bottom: 0.75rem; font-size: 1.2rem; color: var(--heading-text);">Signature
+                            Gift Hampers</h4>
+                        <p style="opacity: 0.8; font-size: 0.95rem; line-height: 1.6;">Introduced our signature keepsake
+                            boxes and personalized milestone gifting suites.</p>
+                    </div>
+
+                    <div class="reveal-up card"
+                        style="padding: 2.5rem 1.75rem; position: relative; border-radius: 24px; border: 1px solid var(--border); transition: all 0.4s ease;">
+                        <div
+                            style="background: rgba(232, 203, 168, 0.35); color: var(--heading-text); padding: 0.4rem 1rem; border-radius: 50px; font-weight: 700; font-size: 0.9rem; width: fit-content; margin-bottom: 1.5rem;">
+                            Today</div>
+                        <div
+                            style="background: var(--bg); width: 56px; height: 56px; border-radius: 16px; display: flex; align-items: center; justify-content: center; color: var(--heading-text); margin-bottom: 1.25rem;">
+                            <i data-lucide="award" style="width: 28px; height: 28px; stroke: var(--highlight);"></i>
+                        </div>
+                        <h4 style="margin-bottom: 0.75rem; font-size: 1.2rem; color: var(--heading-text);">15,000+
+                            Families</h4>
+                        <p style="opacity: 0.8; font-size: 0.95rem; line-height: 1.6;">Honored to be a cherished part of
+                            newborn arrivals across the nation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 🦶 FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid" style="margin-bottom: 4rem;">
+                <div>
+                    <a href="index.html" class="footer-logo">
+                        <i data-lucide="baby"></i> Baby Care & Maternity
+                    </a>
+                    <p
+                        style="opacity: 0.8; margin-bottom: 2rem; max-width: 320px; font-size: 0.95rem; line-height: 1.7; color: var(--soft-sand);">
+                        Thoughtfully selected baby essentials and maternity must-haves, crafted to make every moment of
+                        motherhood gentle and special.</p>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><svg viewBox="0 0 24 24"
+                                style="width: 18px; height: 18px; fill: currentColor; display: inline-block; vertical-align: middle;">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                </path>
+                            </svg></a>
+                        <a href="#"><i data-lucide="heart"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1.5rem; color: #FFFFFF;">Collections</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 0.75rem; opacity: 0.85;">
+                        <li><a href="products.html">Baby Clothing</a></li>
+                        <li><a href="products.html">Newborn Essentials</a></li>
+                        <li><a href="products.html">Baby Skincare</a></li>
+                        <li><a href="products.html">Feeding & Nursing</a></li>
+                        <li><a href="products.html">Maternity & Mom Care</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1.5rem; color: #FFFFFF;">Quick Links</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 0.75rem; opacity: 0.85;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gift-sets.html">Gift Sets</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1.5rem; color: #FFFFFF;">Customer Care</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 0.75rem; opacity: 0.85;">
+                        <li><i data-lucide="map-pin" style="color: var(--primary);"></i> 450 Little Sprout Way, New
+                            York, NY</li>
+                        <li><i data-lucide="phone" style="color: var(--primary);"></i> (800) 245-BABY</li>
+                        <li><i data-lucide="mail" style="color: var(--primary);"></i> support@babycarestore.com</li>
+                        <li><i data-lucide="clock" style="color: var(--primary);"></i> Mon – Sat: 9:00 AM – 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.15); padding-top: 2rem; text-align: center; opacity: 0.7; font-size: 0.9rem; color: var(--soft-sand);">
+                &copy; 2026 Baby Care & Maternity Products Store. All rights reserved. Gentle comfort for little
+                miracles.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ⬆️ BACK TO TOP -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top">
+        <i data-lucide="chevron-up"></i>
+    </button>
+
+    <script src="scripts/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+        });
+    </script>
+</body>
+
+</html>
