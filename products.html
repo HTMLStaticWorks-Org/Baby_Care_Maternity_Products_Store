@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Care & Maternity Products | Organic Clothing, Skincare & Essentials</title>
+    <meta name="description" content="Explore our premium collection of baby clothing, gentle skincare, bath essentials, feeding accessories, bedding and baby care accessories.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.364.0/dist/umd/lucide.min.js"></script>
+</head>
+
+<body>
+    <!-- 🧭 HEADER -->
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <a href="index.html" class="logo-brand">
+                <i data-lucide="baby"></i> Baby Care & Maternity
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="home-2.html">Home 2</a>
+                <a href="about.html">About</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="services.html">Services</a>
+                <a href="gift-sets.html">Gift Sets</a>
+                <a href="contact.html">Contact</a>
+                <!-- Toggles inside menu for mobile ONLY -->
+                <div class="mobile-show" style="gap: 1.5rem; margin-top: 1rem; margin-bottom: 2rem;">
+                    <button id="theme-toggle-mob" class="btn" title="Change Theme"
+                        style="background: none; color: inherit; padding: 0.75rem; border: 1px solid var(--border); border-radius: 12px; flex: 1;"><i
+                            data-lucide="moon"></i></button>
+                    <button id="rtl-toggle-mob" class="btn"
+                        style="background: none; color: inherit; padding: 0.75rem; border: 1px solid var(--border); border-radius: 12px; flex: 1;">RTL</button>
+                </div>
+
+                <a href="contact.html" class="btn btn-primary mobile-show"
+                    style="margin-top: 1rem; text-align: center;">Send Enquiry</a>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="btn-nav-utility mobile-hide" title="Change Theme">
+                    <i data-lucide="moon"></i>
+                </button>
+                <button id="rtl-toggle" class="btn-nav-utility mobile-hide" title="Switch Direction">
+                    <span>RTL</span>
+                </button>
+                <button id="mobile-menu-trigger"
+                    style="background: none; border: none; cursor: pointer; color: inherit; padding: 0.5rem;" aria-label="Toggle Navigation Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+                <a href="contact.html" class="btn btn-primary mobile-hide">Send Enquiry</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Page Banner – Explore Our Baby Products -->
+        <section style="padding: 9rem 0 4rem; background: var(--bg); position: relative; overflow: hidden;">
+            <div class="blob-bg-1" style="top: 0%; left: -5%; background: radial-gradient(circle, rgba(216, 180, 200, 0.3) 0%, transparent 70%);"></div>
+            <div class="blob-bg-2" style="bottom: 0%; right: -5%; background: radial-gradient(circle, rgba(184, 201, 216, 0.3) 0%, transparent 70%);"></div>
+            <div class="container" style="position: relative; z-index: 2; text-align: center;">
+                <div class="reveal-zoom" style="max-width: 820px; margin: 0 auto;">
+                    <div style="display: inline-flex; align-items: center; justify-content: center; gap: 0.85rem; flex-wrap: wrap; margin-bottom: 1.25rem;">
+                        <span class="badge-summer float-bob">
+                            <i data-lucide="sparkles" style="width: 16px; color: var(--heading-text);"></i> COMPLETE STORE CATALOG
+                        </span>
+                        <span class="camp-note">Comfort for Babies. Support for Moms.</span>
+                    </div>
+
+                    <h1 style="margin: 0.75rem 0 1.25rem; color: var(--heading-text); line-height: 1.15; font-size: clamp(2.4rem, 4.8vw, 3.6rem);">
+                        Explore Our Baby Products
+                    </h1>
+
+                    <p style="font-size: 1.2rem; font-weight: 400; opacity: 0.88; max-width: 680px; margin: 0 auto 2.5rem; color: var(--body-text); line-height: 1.7;">
+                        Thoughtfully selected essentials designed for pure comfort, biocompatibility, and tender care from newborn days through toddlerhood.
+                    </p>
+
+                    <!-- Trust indicators -->
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
+                        <div class="badge-forest" style="padding: 0.55rem 1.2rem; font-size: 0.88rem;">
+                            <i data-lucide="shield-check" style="width: 18px; color: var(--heading-text);"></i> 100% GOTS Organic Cotton
+                        </div>
+                        <div class="badge-teal" style="padding: 0.55rem 1.2rem; font-size: 0.88rem;">
+                            <i data-lucide="heart" style="width: 18px; color: var(--heading-text);"></i> Pediatrician Tested Skincare
+                        </div>
+                        <div class="badge-orange" style="padding: 0.55rem 1.2rem; font-size: 0.88rem;">
+                            <i data-lucide="sparkles" style="width: 18px; color: var(--heading-text);"></i> Non-Toxic & BPA-Free
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2: Category Navigation (Interactive Navigation Tabs) -->
+                <nav class="category-nav-wrap reveal-up" aria-label="Product Categories">
+                    <a href="#clothing" class="category-pill active">
+                        <i data-lucide="shirt" style="width: 18px; height: 18px;"></i> Baby Clothing
+                    </a>
+                    <a href="#skincare" class="category-pill">
+                        <i data-lucide="droplet" style="width: 18px; height: 18px;"></i> Baby Skincare
+                    </a>
+                    <a href="#bath" class="category-pill">
+                        <i data-lucide="bath" style="width: 18px; height: 18px;"></i> Bath Essentials
+                    </a>
+                    <a href="#feeding" class="category-pill">
+                        <i data-lucide="milk" style="width: 18px; height: 18px;"></i> Feeding Accessories
+                    </a>
+                    <a href="#bedding" class="category-pill">
+                        <i data-lucide="bed" style="width: 18px; height: 18px;"></i> Bedding & Blankets
+                    </a>
+                    <a href="#accessories" class="category-pill">
+                        <i data-lucide="heart" style="width: 18px; height: 18px;"></i> Baby Care Accessories
+                    </a>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Section 3: Featured Products – Highlight Recommended Products -->
+        <section style="background: var(--bg-secondary, #F5EEF2); padding: 5rem 0 6rem;">
+            <div class="container">
+                <div class="reveal-up" style="text-align: center; margin-bottom: 3.5rem;">
+                    <span class="badge-summer" style="margin-bottom: 0.85rem;">
+                        <i data-lucide="award" style="width: 16px;"></i> HIGHLY RECOMMENDED
+                    </span>
+                    <h2 style="margin-bottom: 1rem;">Featured Products</h2>
+                    <p style="font-size: 1.1rem; max-width: 650px; margin: 0 auto; color: var(--body-text);">
+                        Our top-rated essentials loved by pediatric nurses, lactation consultants, and thousands of mothers.
+                    </p>
+                </div>
+
+                <div class="bestseller-grid stagger-container">
+                    <!-- Featured 1 -->
+                    <div class="product-card card-equal-height reveal-left">
+                        <div class="product-card-img-wrap">
+                            <span class="product-badge-float badge-summer">ORGANIC COTTON</span>
+                            <img src="https://images.unsplash.com/photo-1522771930-78848d9293e8?auto=format&fit=crop&w=600&q=80" alt="Heirloom Organic Knit Romper" class="product-card-img">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="product-card-cat">Baby Clothing</span>
+                            <h3 class="product-card-title">Heirloom Organic Knit Romper</h3>
+                            <div style="display: flex; gap: 0.2rem; color: var(--highlight); margin-bottom: 0.75rem;">
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <span style="font-size: 0.82rem; font-weight: 700; color: var(--heading-text); margin-left: 0.35rem;">4.9 (142)</span>
+                            </div>
+                            <p class="product-card-desc">Chunky knit organic cotton with wooden coconut buttons and comfortable elastic leg openings.</p>
+                            <div class="product-card-footer">
+                                <div class="product-card-price">$34 <span>/ each</span></div>
+                                <a href="contact.html" class="btn btn-primary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Featured 2 -->
+                    <div class="product-card card-equal-height reveal-up">
+                        <div class="product-card-img-wrap">
+                            <span class="product-badge-float badge-teal">DERMATOLOGIST TESTED</span>
+                            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80" alt="Nourishing Oat & Calendula Baby Lotion" class="product-card-img">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="product-card-cat">Baby Skincare</span>
+                            <h3 class="product-card-title">Nourishing Calendula Baby Lotion</h3>
+                            <div style="display: flex; gap: 0.2rem; color: var(--highlight); margin-bottom: 0.75rem;">
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <span style="font-size: 0.82rem; font-weight: 700; color: var(--heading-text); margin-left: 0.35rem;">5.0 (218)</span>
+                            </div>
+                            <p class="product-card-desc">Colloidal oatmeal and organic calendula locking in 24-hour hydration for eczema-prone baby skin.</p>
+                            <div class="product-card-footer">
+                                <div class="product-card-price">$22 <span>/ 200ml</span></div>
+                                <a href="contact.html" class="btn btn-primary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Featured 3 -->
+                    <div class="product-card card-equal-height reveal-up">
+                        <div class="product-card-img-wrap">
+                            <span class="product-badge-float badge-forest">SILKY SOFT BAMBOO</span>
+                            <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=600&q=80" alt="Bamboo Cloud Swaddle & Beanie Set" class="product-card-img">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="product-card-cat">Bedding & Blankets</span>
+                            <h3 class="product-card-title">Bamboo Cloud Swaddle & Beanie</h3>
+                            <div style="display: flex; gap: 0.2rem; color: var(--highlight); margin-bottom: 0.75rem;">
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <span style="font-size: 0.82rem; font-weight: 700; color: var(--heading-text); margin-left: 0.35rem;">4.9 (189)</span>
+                            </div>
+                            <p class="product-card-desc">Extra-large 120x120cm breathable bamboo swaddle paired with an adjustable top-knot baby beanie.</p>
+                            <div class="product-card-footer">
+                                <div class="product-card-price">$29 <span>/ set</span></div>
+                                <a href="contact.html" class="btn btn-primary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Featured 4 -->
+                    <div class="product-card card-equal-height reveal-right">
+                        <div class="product-card-img-wrap">
+                            <span class="product-badge-float badge-orange">ANTI-COLIC VALVE</span>
+                            <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=600&q=80" alt="Anti-Colic Glass Feeding Bottle" class="product-card-img">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="product-card-cat">Feeding Accessories</span>
+                            <h3 class="product-card-title">Anti-Colic Glass Bottle (240ml)</h3>
+                            <div style="display: flex; gap: 0.2rem; color: var(--highlight); margin-bottom: 0.75rem;">
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <span style="font-size: 0.82rem; font-weight: 700; color: var(--heading-text); margin-left: 0.35rem;">4.8 (116)</span>
+                            </div>
+                            <p class="product-card-desc">Pure medical-grade borosilicate glass paired with a breast-like natural latch silicone nipple.</p>
+                            <div class="product-card-footer">
+                                <div class="product-card-price">$24 <span>/ bottle</span></div>
+                                <a href="contact.html" class="btn btn-primary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Product Grid (All 6 Client Categories with Accurate Prices & Details) -->
+        <section id="product-catalog" style="background: var(--bg); padding: 6rem 0;">
+            <div class="container">
+                <div class="reveal-up" style="text-align: center; margin-bottom: 4rem;">
+                    <span style="color: var(--heading-text); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem;">Curated Inventory</span>
+                    <h2 style="margin-top: 0.8rem;">Complete Product Collection</h2>
+                    <p style="font-weight: 400; font-size: 1.1rem; opacity: 0.85; max-width: 650px; margin: 0 auto;">
+                        Explore each collection organized with complete transparency in materials, sizes, and pricing.
+                    </p>
+                </div>
+
+                <!-- 1. Baby Clothing -->
+                <div id="clothing" style="margin-bottom: 5rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2rem; border-bottom: 2px solid var(--border); padding-bottom: 1rem; flex-wrap: wrap; gap: 1rem;">
+                        <div>
+                            <h3 style="font-size: 1.8rem; color: var(--heading-text); margin: 0;">1. Baby Clothing</h3>
+                            <p style="color: var(--body-text); opacity: 0.85; margin: 0.35rem 0 0; font-size: 0.95rem;">Pure organic cotton bodysuits, rompers, and sleepwear for tender skin.</p>
+                        </div>
+                        <span class="badge-forest">100% GOTS Organic Cotton</span>
+                    </div>
+
+                    <div class="products-catalog-grid cards-row-aligned stagger-container">
+                        <div class="product-card card-equal-height reveal-left">
+                            <div class="product-card-img-wrap">
+                                <span class="product-badge-float badge-summer">3-PACK</span>
+                                <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Organic Cotton Bodysuit 3-Pack" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">Baby Clothing</span>
+                                <h4 class="product-card-title">Organic Cotton Bodysuits (3-Pack)</h4>
+                                <p class="product-card-desc">Expandable lap shoulder neckline and nickel-free bottom snaps for easy diaper checks.</p>
+                                <div class="product-card-footer">
+                                    <div class="product-card-price">$26 <span>/ 3-pack</span></div>
+                                    <a href="contact.html" class="btn btn-secondary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card card-equal-height reveal-up">
+                            <div class="product-card-img-wrap">
+                                <span class="product-badge-float badge-teal">2-WAY ZIPPER</span>
+                                <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=600&q=80" alt="Cozy Footed Sleepsuit" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">Baby Clothing</span>
+                                <h4 class="product-card-title">Cozy Footed Sleepsuit</h4>
+                                <p class="product-card-desc">Built-in foldover scratch mittens with safety chin guard preventing accidental pinches.</p>
+                                <div class="product-card-footer">
+                                    <div class="product-card-price">$28 <span>/ each</span></div>
+                                    <a href="contact.html" class="btn btn-secondary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card card-equal-height reveal-right">
+                            <div class="product-card-img-wrap">
+                                <span class="product-badge-float badge-orange">BREATHABLE KNIT</span>
+                                <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=600&q=80" alt="Soft Ribbed Knit Romper" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">Baby Clothing</span>
+                                <h4 class="product-card-title">Soft Ribbed Knit Romper</h4>
+                                <p class="product-card-desc">Stretchy ribbed organic cotton in gentle oatmeal and blush tones for relaxed playtime.</p>
+                                <div class="product-card-footer">
+                                    <div class="product-card-price">$24 <span>/ each</span></div>
+                                    <a href="contact.html" class="btn btn-secondary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Baby Skincare -->
+                <div id="skincare" style="margin-bottom: 5rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2rem; border-bottom: 2px solid var(--border); padding-bottom: 1rem; flex-wrap: wrap; gap: 1rem;">
+                        <div>
+                            <h3 style="font-size: 1.8rem; color: var(--heading-text); margin: 0;">2. Baby Skincare</h3>
+                            <p style="color: var(--body-text); opacity: 0.85; margin: 0.35rem 0 0; font-size: 0.95rem;">Plant-derived botanical formulas free from parabens, sulfates, and dyes.</p>
+                        </div>
+                        <span class="badge-teal">Pediatrician & Dermatologist Approved</span>
+                    </div>
+
+                    <div class="products-catalog-grid cards-row-aligned stagger-container">
+                        <div class="product-card card-equal-height reveal-left">
+                            <div class="product-card-img-wrap">
+                                <span class="product-badge-float badge-forest">TEAR-FREE</span>
+                                <img src="https://images.unsplash.com/photo-1607344645866-009c320c5ab8?auto=format&fit=crop&w=600&q=80" alt="Tear-Free Gentle Baby Wash" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">Baby Skincare</span>
+                                <h4 class="product-card-title">Tear-Free Gentle Baby Wash (250ml)</h4>
+                                <p class="product-card-desc">pH-neutral coconut and chamomile foam cleansing delicate hair and skin without stinging.</p>
+                                <div class="product-card-footer">
+                                    <div class="product-card-price">$18 <span>/ bottle</span></div>
+                                    <a href="contact.html" class="btn btn-secondary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card card-equal-height reveal-up">
+                            <div class="product-card-img-wrap">
+                                <span class="product-badge-float badge-orange">ZINC OXIDE</span>
+                                <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=600&q=80" alt="Protective Diaper Barrier Cream" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">Baby Skincare</span>
+                                <h4 class="product-card-title">Protective Diaper Barrier Cream (100ml)</h4>
+                                <p class="product-card-desc">14% non-nano zinc oxide with organic shea butter providing instant redness relief.</p>
+                                <div class="product-card-footer">
+                                    <div class="product-card-price">$16 <span>/ tube</span></div>
+                                    <a href="contact.html" class="btn btn-secondary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card card-equal-height reveal-right">
+                            <div class="product-card-img-wrap">
+                                <span class="product-badge-float badge-summer">LAVENDER & SWEET ALMOND</span>
+                                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80" alt="Calming Bedtime Massage Oil" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">Baby Skincare</span>
+                                <h4 class="product-card-title">Calming Bedtime Massage Oil (120ml)</h4>
+                                <p class="product-card-desc">Cold-pressed organic jojoba and sweet almond oil for soothing infant massage rituals.</p>
+                                <div class="product-card-footer">
+                                    <div class="product-card-price">$20 <span>/ bottle</span></div>
+                                    <a href="contact.html" class="btn btn-secondary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Bath Essentials -->
+                <div id="bath" style="margin-bottom: 5rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2rem; border-bottom: 2px solid var(--border); padding-bottom: 1rem; flex-wrap: wrap; gap: 1rem;">
+                        <div>
+                            <h3 style="font-size: 1.8rem; color: var(--heading-text); margin: 0;">3. Bath Essentials</h3>
+                            <p style="color: var(--body-text); opacity: 0.85; margin: 0.35rem 0 0; font-size: 0.95rem;">Plush hooded bamboo towels, natural sea sponges, and soft grooming brushes.</p>
+                        </div>
+                        <span class="badge-summer">Ultra-Absorbent 500 GSM Bamboo</span>
+                    </div>
+
+                    <div class="products-catalog-grid cards-row-aligned stagger-container">
+                        <div class="product-card card-equal-height reveal-left">
+                            <div class="product-card-img-wrap">
+                                <span class="product-badge-float badge-summer">BEAR EARS</span>
+                                <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=600&q=80" alt="Ultra-Plush Animal Hooded Towel" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">Bath Essentials</span>
+                                <h4 class="product-card-title">Ultra-Plush Animal Hooded Towel</h4>
+                                <p class="product-card-desc">Oversized 90x90cm hooded bamboo towel drying baby quickly while retaining head warmth.</p>
+                                <div class="product-card-footer">
+                                    <div class="product-card-price">$24 <span>/ each</span></div>
+                                    <a href="contact.html" class="btn btn-secondary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card card-equal-height reveal-up">
+                            <div class="product-card-img-wrap">
+                                <span class="product-badge-float badge-forest">4-PACK</span>
+                                <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=600&q=80" alt="Organic Muslin Washcloths 4-Pack" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">Bath Essentials</span>
+                                <h4 class="product-card-title">Organic Muslin Washcloths (4-Pack)</h4>
+                                <p class="product-card-desc">6-layer crinkled muslin squares gentle enough for facial cleansing and cradle cap care.</p>
+                                <div class="product-card-footer">
+                                    <div class="product-card-price">$15 <span>/ 4-pack</span></div>
+                                    <a href="contact.html" class="btn btn-secondary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card card-equal-height reveal-right">
+                            <div class="product-card-img-wrap">
+                                <span class="product-badge-float badge-teal">NATURAL FIBERS</span>
+                                <img src="https://images.unsplash.com/photo-1544126592-807ade215a0b?auto=format&fit=crop&w=600&q=80" alt="Natural Sea Sponge & Brush" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">Bath Essentials</span>
+                                <h4 class="product-card-title">Natural Sea Sponge & Brush Set</h4>
+                                <p class="product-card-desc">Sustainably harvested Mediterranean sea sponge paired with a soft goat-hair wooden brush.</p>
+                                <div class="product-card-footer">
+                                    <div class="product-card-price">$19 <span>/ set</span></div>
+                                    <a href="contact.html" class="btn btn-secondary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Feeding Accessories -->
+                <div id="feeding" style="margin-bottom: 5rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2rem; border-bottom: 2px solid var(--border); padding-bottom: 1rem; flex-wrap: wrap; gap: 1rem;">
+                        <div>
+                            <h3 style="font-size: 1.8rem; color: var(--heading-text); margin: 0;">4. Feeding Accessories</h3>
+                            <p style="color: var(--body-text); opacity: 0.85; margin: 0.35rem 0 0; font-size: 0.95rem;">Ergonomic bottles, silicone bibs, and supportive breastfeeding essentials.</p>
+                        </div>
+                        <span class="badge-orange">100% Food-Grade Silicone & Glass</span>
+                    </div>
+
+                    <div class="products-catalog-grid cards-row-aligned stagger-container">
+                        <div class="product-card card-equal-height reveal-left">
+                            <div class="product-card-img-wrap">
+                                <span class="product-badge-float badge-orange">GLASS TWIN-PACK</span>
+                                <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=600&q=80" alt="Anti-Colic Glass Bottle Set" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">Feeding Accessories</span>
+                                <h4 class="product-card-title">Anti-Colic Glass Bottles (Twin-Pack)</h4>
+                                <p class="product-card-desc">Thermal-resistant glass bottles with silicone protective sleeves and anti-collapse nipples.</p>
+                                <div class="product-card-footer">
+                                    <div class="product-card-price">$36 <span>/ twin-pack</span></div>
+                                    <a href="contact.html" class="btn btn-secondary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card card-equal-height reveal-up">
+                            <div class="product-card-img-wrap">
+                                <span class="product-badge-float badge-summer">WATERPROOF</span>
+                                <img src="https://images.unsplash.com/photo-1516585427167-9f4af9627e6c?auto=format&fit=crop&w=600&q=80" alt="Organic Cotton Waterproof Bibs" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">Feeding Accessories</span>
+                                <h4 class="product-card-title">Organic Bandana Bibs (Set of 3)</h4>
+                                <p class="product-card-desc">Absorbent front layer with breathable waterproof TPU backing keeping baby's chest dry.</p>
+                                <div class="product-card-footer">
+                                    <div class="product-card-price">$16 <span>/ 3-pack</span></div>
+                                    <a href="contact.html" class="btn btn-secondary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card card-equal-height reveal-right">
+                            <div class="product-card-img-wrap">
+                                <span class="product-badge-float badge-teal">STAY-PUT SUCTION</span>
+                                <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=600&q=80" alt="Silicone Suction Bowl & Spoon" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">Feeding Accessories</span>
+                                <h4 class="product-card-title">Silicone Suction Bowl & Spoon</h4>
+                                <p class="product-card-desc">Super-grip suction base preventing table spills during baby-led weaning exploration.</p>
+                                <div class="product-card-footer">
+                                    <div class="product-card-price">$20 <span>/ set</span></div>
+                                    <a href="contact.html" class="btn btn-secondary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Bedding & Blankets -->
+                <div id="bedding" style="margin-bottom: 5rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2rem; border-bottom: 2px solid var(--border); padding-bottom: 1rem; flex-wrap: wrap; gap: 1rem;">
+                        <div>
+                            <h3 style="font-size: 1.8rem; color: var(--heading-text); margin: 0;">5. Bedding & Blankets</h3>
+                            <p style="color: var(--body-text); opacity: 0.85; margin: 0.35rem 0 0; font-size: 0.95rem;">Hypoallergenic swaddles, knit blankets, and breathable crib sheets.</p>
+                        </div>
+                        <span class="badge-teal">Breathable & OEKO-TEX Certified</span>
+                    </div>
+
+                    <div class="products-catalog-grid cards-row-aligned stagger-container">
+                        <div class="product-card card-equal-height reveal-left">
+                            <div class="product-card-img-wrap">
+                                <span class="product-badge-float badge-forest">BAMBOO RAYON</span>
+                                <img src="https://images.unsplash.com/photo-1505377059067-e285a7bac49b?auto=format&fit=crop&w=600&q=80" alt="Breathable Bamboo Muslin Swaddle" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">Bedding & Blankets</span>
+                                <h4 class="product-card-title">Breathable Bamboo Muslin Swaddle</h4>
+                                <p class="product-card-desc">Hypoallergenic swaddle mimicking the womb's comfort for calm, secure sleeping.</p>
+                                <div class="product-card-footer">
+                                    <div class="product-card-price">$22 <span>/ each</span></div>
+                                    <a href="contact.html" class="btn btn-secondary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card card-equal-height reveal-up">
+                            <div class="product-card-img-wrap">
+                                <span class="product-badge-float badge-summer">HEIRLOOM KNIT</span>
+                                <img src="https://images.unsplash.com/photo-1510154221590-ff63e90a136f?auto=format&fit=crop&w=600&q=80" alt="Cable Knit Cotton Crib Blanket" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">Bedding & Blankets</span>
+                                <h4 class="product-card-title">Cable Knit Cotton Crib Blanket</h4>
+                                <p class="product-card-desc">Medium-weight cellular knit providing cozy warmth without overheating delicate babies.</p>
+                                <div class="product-card-footer">
+                                    <div class="product-card-price">$38 <span>/ each</span></div>
+                                    <a href="contact.html" class="btn btn-secondary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card card-equal-height reveal-right">
+                            <div class="product-card-img-wrap">
+                                <span class="product-badge-float badge-orange">STANDARD CRIB FIT</span>
+                                <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=600&q=80" alt="Fitted Organic Crib Sheet" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">Bedding & Blankets</span>
+                                <h4 class="product-card-title">Hypoallergenic Fitted Crib Sheet</h4>
+                                <p class="product-card-desc">360-degree deep elastic pocket securely wrapping standard 52x28" crib mattresses.</p>
+                                <div class="product-card-footer">
+                                    <div class="product-card-price">$26 <span>/ each</span></div>
+                                    <a href="contact.html" class="btn btn-secondary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Baby Care Accessories -->
+                <div id="accessories">
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2rem; border-bottom: 2px solid var(--border); padding-bottom: 1rem; flex-wrap: wrap; gap: 1rem;">
+                        <div>
+                            <h3 style="font-size: 1.8rem; color: var(--heading-text); margin: 0;">6. Baby Care Accessories</h3>
+                            <p style="color: var(--body-text); opacity: 0.85; margin: 0.35rem 0 0; font-size: 0.95rem;">Teethers, milestone cards, grooming tools, and nursery nursery organization.</p>
+                        </div>
+                        <span class="badge-summer">Untreated Hardwood & Safety Tested</span>
+                    </div>
+
+                    <div class="products-catalog-grid cards-row-aligned stagger-container">
+                        <div class="product-card card-equal-height reveal-left">
+                            <div class="product-card-img-wrap">
+                                <span class="product-badge-float badge-forest">NATURAL WOOD</span>
+                                <img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?auto=format&fit=crop&w=600&q=80" alt="Beechwood Teething Ring" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">Baby Care Accessories</span>
+                                <h4 class="product-card-title">Natural Beechwood Teething Ring</h4>
+                                <p class="product-card-desc">Easy to grasp for tiny fingers, providing soothing natural gum relief during teething.</p>
+                                <div class="product-card-footer">
+                                    <div class="product-card-price">$14 <span>/ each</span></div>
+                                    <a href="contact.html" class="btn btn-secondary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card card-equal-height reveal-up">
+                            <div class="product-card-img-wrap">
+                                <span class="product-badge-float badge-teal">COMPLETE CARE</span>
+                                <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80" alt="Newborn Health & Grooming Set" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">Baby Care Accessories</span>
+                                <h4 class="product-card-title">Newborn Health & Grooming Kit</h4>
+                                <p class="product-card-desc">Rounded safety nail scissors, soft-bristle brush, nasal aspirator, and wooden comb.</p>
+                                <div class="product-card-footer">
+                                    <div class="product-card-price">$28 <span>/ kit</span></div>
+                                    <a href="contact.html" class="btn btn-secondary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card card-equal-height reveal-right">
+                            <div class="product-card-img-wrap">
+                                <span class="product-badge-float badge-orange">PHOTO KEEPSAKE</span>
+                                <img src="https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80" alt="Soft Touch Milestone Cards" class="product-card-img">
+                            </div>
+                            <div class="product-card-body">
+                                <span class="product-card-cat">Baby Care Accessories</span>
+                                <h4 class="product-card-title">Soft Touch Baby Milestone Cards</h4>
+                                <p class="product-card-desc">24 double-sided foil stamped cards capturing every precious growth milestone.</p>
+                                <div class="product-card-footer">
+                                    <div class="product-card-price">$18 <span>/ box</span></div>
+                                    <a href="contact.html" class="btn btn-secondary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Product Details – Materials, Sizes and Usage Information -->
+        <section style="background: var(--bg-secondary, #F5EEF2); padding: 6rem 0;">
+            <div class="container">
+                <div class="reveal-up" style="text-align: center; margin-bottom: 4rem;">
+                    <span class="badge-teal" style="margin-bottom: 0.85rem;">
+                        <i data-lucide="info" style="width: 16px;"></i> TRANSPARENCY & STANDARDS
+                    </span>
+                    <h2 style="margin-bottom: 1rem;">Product Specifications & Care Guide</h2>
+                    <p style="font-size: 1.1rem; max-width: 650px; margin: 0 auto; color: var(--body-text);">
+                        Detailed materials, accurate sizing charts, and pediatrician-recommended usage directions.
+                    </p>
+                </div>
+
+                <div class="product-details-spec-grid cards-row-aligned stagger-container">
+                    <!-- Box 1: Materials -->
+                    <div class="spec-detail-box card-equal-height reveal-left">
+                        <div class="spec-detail-icon" style="background: rgba(216, 180, 200, 0.35);">
+                            <i data-lucide="shield-check" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3 style="font-size: 1.35rem; color: var(--heading-text); margin-bottom: 0.75rem;">Pure Materials & Fabrics</h3>
+                        <p style="font-size: 0.95rem; color: var(--body-text); opacity: 0.88; line-height: 1.65; margin-bottom: 1.5rem;">
+                            Every single fabric and ingredient touching your baby's skin is non-toxic, hypoallergenic, and ethically sourced.
+                        </p>
+                        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.92rem;">
+                            <li style="display: flex; gap: 0.6rem; align-items: center;"><i data-lucide="check" style="color: var(--primary); min-width: 16px;"></i> <strong>100% GOTS Organic Cotton:</strong> Free of formaldehyde, bleach & heavy metals.</li>
+                            <li style="display: flex; gap: 0.6rem; align-items: center;"><i data-lucide="check" style="color: var(--primary); min-width: 16px;"></i> <strong>Natural Bamboo Fiber:</strong> Hypoallergenic, thermal-regulating & moisture wicking.</li>
+                            <li style="display: flex; gap: 0.6rem; align-items: center;"><i data-lucide="check" style="color: var(--primary); min-width: 16px;"></i> <strong>Food-Grade Silicone:</strong> BPA-free, PVC-free, phthalate-free and lead-free.</li>
+                            <li style="display: flex; gap: 0.6rem; align-items: center;"><i data-lucide="check" style="color: var(--primary); min-width: 16px;"></i> <strong>Botanical Skincare:</strong> Calendula, chamomile, shea butter & colloidal oat.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Box 2: Sizing Guide -->
+                    <div class="spec-detail-box card-equal-height reveal-up">
+                        <div class="spec-detail-icon" style="background: rgba(184, 201, 216, 0.4);">
+                            <i data-lucide="ruler" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3 style="font-size: 1.35rem; color: var(--heading-text); margin-bottom: 0.75rem;">Standard Sizing Guide</h3>
+                        <p style="font-size: 0.95rem; color: var(--body-text); opacity: 0.88; line-height: 1.65; margin-bottom: 1.5rem;">
+                            Accurate baby clothing measurements to ensure comfortable, non-restrictive movement.
+                        </p>
+                        <div style="background: var(--bg); border-radius: 14px; padding: 1rem; border: 1px solid var(--border); font-size: 0.88rem;">
+                            <div style="display: flex; justify-content: space-between; padding: 0.4rem 0; border-bottom: 1px solid var(--border); font-weight: 700; color: var(--heading-text);">
+                                <span>Size</span><span>Baby Weight</span><span>Baby Length</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.4rem 0; border-bottom: 1px solid rgba(0,0,0,0.05);">
+                                <span>Newborn</span><span>5 – 8 lbs</span><span>Up to 21.5 in</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.4rem 0; border-bottom: 1px solid rgba(0,0,0,0.05);">
+                                <span>0 – 3 Months</span><span>8 – 12.5 lbs</span><span>21.5 – 24 in</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.4rem 0; border-bottom: 1px solid rgba(0,0,0,0.05);">
+                                <span>3 – 6 Months</span><span>12.5 – 17 lbs</span><span>24 – 26.5 in</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.4rem 0;">
+                                <span>6 – 12 Months</span><span>17 – 22 lbs</span><span>26.5 – 30.5 in</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Box 3: Care & Usage Instructions -->
+                    <div class="spec-detail-box card-equal-height reveal-right">
+                        <div class="spec-detail-icon" style="background: rgba(197, 213, 181, 0.45);">
+                            <i data-lucide="sparkles" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3 style="font-size: 1.35rem; color: var(--heading-text); margin-bottom: 0.75rem;">Care & Usage Guidelines</h3>
+                        <p style="font-size: 0.95rem; color: var(--body-text); opacity: 0.88; line-height: 1.65; margin-bottom: 1.5rem;">
+                            Follow these simple laundering and storage guidelines to preserve fabric softness and safety.
+                        </p>
+                        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.92rem;">
+                            <li style="display: flex; gap: 0.6rem; align-items: center;"><i data-lucide="check" style="color: var(--accent); min-width: 16px;"></i> <strong>Washing Apparel:</strong> Machine wash cold on gentle cycle with plant-based detergent.</li>
+                            <li style="display: flex; gap: 0.6rem; align-items: center;"><i data-lucide="check" style="color: var(--accent); min-width: 16px;"></i> <strong>Drying:</strong> Tumble dry low or line dry in shaded area to protect fibers.</li>
+                            <li style="display: flex; gap: 0.6rem; align-items: center;"><i data-lucide="check" style="color: var(--accent); min-width: 16px;"></i> <strong>Skincare Application:</strong> Patch test 24 hours prior to first full-body routine.</li>
+                            <li style="display: flex; gap: 0.6rem; align-items: center;"><i data-lucide="check" style="color: var(--accent); min-width: 16px;"></i> <strong>Feeding Sanitizing:</strong> Boil glass bottles 5 minutes prior to initial use.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Shop Now CTA – Encourage Product Enquiries or Purchases -->
+        <section
+            style="background: linear-gradient(135deg, #443640 0%, #2B2128 100%); padding: 7rem 0; text-align: center; color: white;">
+            <div class="container">
+                <div class="reveal-zoom" style="max-width: 820px; margin: 0 auto;">
+                    <span class="badge-summer" style="background: var(--primary); color: #443640 !important; font-weight: 800; margin-bottom: 1.5rem; border: none; padding: 0.5rem 1.4rem;">READY TO CARE</span>
+                    <h2
+                        style="font-size: clamp(2.4rem, 5.5vw, 3.6rem); line-height: 1.2; margin-bottom: 1.5rem; color: #FFFFFF !important;">
+                        Ready to Welcome Gentle Care Home?</h2>
+                    <p style="font-size: 1.2rem; opacity: 0.95; margin-bottom: 3rem; line-height: 1.7; color: #FFF9F5 !important;">
+                        Have questions about sizes, materials, or putting together a complete nursery starter registry? Our dedicated parent advisors are here to guide you.
+                    </p>
+                    <div style="display: flex; gap: 1.25rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="contact.html" class="btn btn-primary"
+                            style="padding: 1.1rem 3.5rem; font-size: 1.15rem; background: var(--primary); color: #443640 !important; border-radius: 50px; border: none; display: inline-block;">Shop Now / Inquire</a>
+                        <a href="gift-sets.html" class="btn btn-secondary"
+                            style="padding: 1.1rem 3.2rem; font-size: 1.15rem; border-radius: 50px; display: inline-block;">Explore Curated Gift Sets</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 🗓️ POPUP -->
+    <div id="booking-popup" class="popup-overlay">
+        <div class="popup-card">
+            <button class="close-popup"
+                style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; cursor: pointer; color: var(--heading-text);"><i
+                    data-lucide="x"></i></button>
+            <h3 style="font-size: 1.75rem; margin-bottom: 0.75rem; color: var(--heading-text);">Request a Product Consultation</h3>
+            <p style="opacity: 0.8; margin-bottom: 2rem; font-size: 0.95rem;">Have questions about sizing, baby materials or nursery bundles? Let our specialists help you select the ideal items.</p>
+            <form style="display: flex; flex-direction: column; gap: 1rem;">
+                <input type="text" placeholder="Your Full Name" class="auth-input" style="margin:0; width: 100%; padding: 0.85rem 1.25rem; border-radius: 14px; border: 1px solid var(--border); background-color: var(--bg); font-family: inherit; color: var(--text);">
+                <input type="email" placeholder="Email Address" class="auth-input" style="margin:0; width: 100%; padding: 0.85rem 1.25rem; border-radius: 14px; border: 1px solid var(--border); background-color: var(--bg); font-family: inherit; color: var(--text);">
+                <select class="auth-input" style="margin:0; width:100%; padding: 0.85rem 1.25rem; border-radius: 14px; font-family: inherit;">
+                    <option>Select Product Category</option>
+                    <option>Baby Clothing (Bodysuits, Rompers, Sleepwear)</option>
+                    <option>Baby Skincare (Wash, Lotion, Balms)</option>
+                    <option>Bath Essentials (Hooded Towels, Muslins)</option>
+                    <option>Feeding Accessories (Bottles, Bibs, Bowls)</option>
+                    <option>Bedding & Blankets (Swaddles, Crib Sheets)</option>
+                    <option>Baby Care Accessories (Teethers, Grooming)</option>
+                </select>
+                <textarea rows="3" placeholder="Describe the items or questions..." style="width: 100%; padding: 0.85rem 1.25rem; border-radius: 14px; border: 1px solid var(--border); background-color: var(--bg); font-family: inherit; color: var(--text); resize: vertical;"></textarea>
+                <button type="button" class="btn btn-primary" style="width: 100%; padding: 0.95rem;">Send Consultation Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 🦶 FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid" style="margin-bottom: 4rem;">
+                <div>
+                    <a href="index.html" class="footer-logo">
+                        <i data-lucide="baby"></i> Baby Care & Maternity
+                    </a>
+                    <p style="opacity: 0.8; margin-bottom: 2rem; max-width: 320px; font-size: 0.95rem; line-height: 1.7; color: var(--soft-sand);">Thoughtfully selected baby essentials and maternity must-haves, crafted to make every moment of motherhood gentle and special.</p>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><svg viewBox="0 0 24 24" style="width: 18px; height: 18px; fill: currentColor; display: inline-block; vertical-align: middle;"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a>
+                        <a href="#"><i data-lucide="heart"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1.5rem; color: #FFFFFF;">Collections</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 0.75rem; opacity: 0.85;">
+                        <li><a href="products.html#clothing">Baby Clothing</a></li>
+                        <li><a href="products.html#skincare">Baby Skincare</a></li>
+                        <li><a href="products.html#bath">Bath Essentials</a></li>
+                        <li><a href="products.html#feeding">Feeding Accessories</a></li>
+                        <li><a href="products.html#bedding">Bedding & Blankets</a></li>
+                        <li><a href="products.html#accessories">Baby Care Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1.5rem; color: #FFFFFF;">Quick Links</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 0.75rem; opacity: 0.85;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gift-sets.html">Gift Sets</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1.5rem; color: #FFFFFF;">Customer Care</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 0.75rem; opacity: 0.85;">
+                        <li><i data-lucide="map-pin" style="color: var(--primary);"></i> 450 Little Sprout Way, New York, NY</li>
+                        <li><i data-lucide="phone" style="color: var(--primary);"></i> (800) 245-BABY</li>
+                        <li><i data-lucide="mail" style="color: var(--primary);"></i> support@babycarestore.com</li>
+                        <li><i data-lucide="clock" style="color: var(--primary);"></i> Mon – Sat: 9:00 AM – 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.15); padding-top: 2rem; text-align: center; opacity: 0.7; font-size: 0.9rem; color: var(--soft-sand);">
+                &copy; 2026 Baby Care & Maternity Products Store. All rights reserved. Gentle comfort for little miracles.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ⬆️ BACK TO TOP -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top">
+        <i data-lucide="chevron-up"></i>
+    </button>
+
+    <script src="scripts/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+
+            // Category Pill Smooth Navigation & Active State
+            const pills = document.querySelectorAll('.category-pill');
+            pills.forEach(pill => {
+                pill.addEventListener('click', (e) => {
+                    pills.forEach(p => p.classList.remove('active'));
+                    pill.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

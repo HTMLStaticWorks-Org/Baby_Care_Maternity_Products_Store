@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Care & Maternity Products Store | Little Beginnings, Beautifully Cared For</title>
+    <meta name="description" content="Discover thoughtfully selected baby essentials and maternity must-haves, designed to make every little moment of motherhood more comfortable, gentle and special.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.364.0/dist/umd/lucide.min.js"></script>
+</head>
+
+<body>
+    <!-- 🧭 HEADER -->
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <a href="index.html" class="logo-brand">
+                <i data-lucide="baby"></i> Baby Care & Maternity
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="home-2.html">Home 2</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="services.html">Services</a>
+                <a href="gift-sets.html">Gift Sets</a>
+                <a href="contact.html">Contact</a>
+                <!-- Toggles inside menu for mobile ONLY -->
+                <div class="mobile-show" style="gap: 1.5rem; margin-top: 1rem; margin-bottom: 2rem;">
+                    <button id="theme-toggle-mob" class="btn" title="Change Theme"
+                        style="background: none; color: inherit; padding: 0.75rem; border: 1px solid var(--border); border-radius: 12px; flex: 1;"><i
+                            data-lucide="moon"></i></button>
+                    <button id="rtl-toggle-mob" class="btn"
+                        style="background: none; color: inherit; padding: 0.75rem; border: 1px solid var(--border); border-radius: 12px; flex: 1;">RTL</button>
+                </div>
+
+                <a href="contact.html" class="btn btn-primary mobile-show"
+                    style="margin-top: 1rem; text-align: center;">Send Enquiry</a>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="btn-nav-utility mobile-hide" title="Change Theme">
+                    <i data-lucide="moon"></i>
+                </button>
+                <button id="rtl-toggle" class="btn-nav-utility mobile-hide" title="Switch Direction">
+                    <span>RTL</span>
+                </button>
+                <button id="mobile-menu-trigger"
+                    style="background: none; border: none; cursor: pointer; color: inherit; padding: 0.5rem;" aria-label="Toggle Navigation Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+                <a href="contact.html" class="btn btn-primary mobile-hide">Send Enquiry</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Hero Section -->
+        <section class="hero-split">
+            <div class="blob-bg-1" style="top: -5%; left: -5%; background: radial-gradient(circle, rgba(216, 180, 200, 0.3) 0%, transparent 70%);"></div>
+            <div class="blob-bg-2" style="bottom: -5%; right: -5%; background: radial-gradient(circle, rgba(184, 201, 216, 0.3) 0%, transparent 70%);"></div>
+            <div class="container" style="position: relative; z-index: 2;">
+                <div class="hero-split-grid">
+                    <div class="reveal-left">
+                        <div style="margin-bottom: 1.25rem; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                            <span class="badge-summer float-bob">
+                                <i data-lucide="sparkles" style="width: 16px; color: var(--heading-text);"></i> NEWBORN & MATERNITY ESSENTIALS
+                            </span>
+                            <span class="camp-note">Gentle for Baby. Comfort for Mom.</span>
+                        </div>
+                        <h1 style="margin-bottom: 1.25rem; color: var(--heading-text);">Little Beginnings, Beautifully Cared For.</h1>
+                        <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9; font-weight: 400; max-width: 540px; color: var(--body-text);">
+                            Discover thoughtfully selected baby essentials and maternity must-haves, designed to make every little moment of motherhood more comfortable, gentle and special.
+                        </p>
+                        <!-- Mobile Consistent Hero Buttons (Target 368px) -->
+                        <div class="hero-cta-group" style="display: flex; gap: 1.25rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
+                            <a href="products.html" class="btn btn-primary hero-btn">Shop Now</a>
+                            <a href="gift-sets.html" class="btn btn-secondary hero-btn">Shop Gift Sets</a>
+                        </div>
+                        <!-- Trust Indicators -->
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                            <div class="badge-forest" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">
+                                <i data-lucide="shield-check" style="width: 18px; color: var(--heading-text);"></i> 100% Organic Cotton
+                            </div>
+                            <div class="badge-teal" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">
+                                <i data-lucide="heart" style="width: 18px; color: var(--heading-text);"></i> Pediatrician Approved
+                            </div>
+                            <div class="badge-orange" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">
+                                <i data-lucide="gift" style="width: 18px; color: var(--heading-text);"></i> Curated Gift Sets
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reveal-right" style="position: relative;">
+                        <!-- Floating Highlight Badge Visual -->
+                        <div style="position: absolute; top: -20px; right: 10px; z-index: 4; background: var(--primary); width: 54px; height: 54px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 20px rgba(216, 180, 200, 0.5);" class="float-bob">
+                            <i data-lucide="heart" style="width: 28px; height: 28px; color: var(--heading-text);"></i>
+                        </div>
+                        <!-- Main Baby & Mother Photo with 2 Floating Cards -->
+                        <div style="position: relative; border-radius: 32px; overflow: hidden; box-shadow: 0 24px 60px rgba(68, 54, 64, 0.12); border: 4px solid var(--white);">
+                            <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=1000&q=80" alt="Loving Mother and Newborn Baby" style="width: 100%; height: 420px; object-fit: cover;">
+                            
+                            <!-- Overlapping Floating Image Card 1: Newborn Bodysuit -->
+                            <div style="position: absolute; bottom: 20px; left: 20px; background: var(--card-bg); padding: 0.85rem 1.25rem; border-radius: 20px; display: flex; align-items: center; gap: 0.85rem; box-shadow: 0 12px 30px rgba(0,0,0,0.1); border: 2px solid var(--primary); z-index: 3;" class="reveal-up">
+                                <img src="https://images.unsplash.com/photo-1522771930-78848d9293e8?auto=format&fit=crop&w=150&q=80" alt="Organic Baby Bodysuit" style="width: 50px; height: 50px; border-radius: 14px; object-fit: cover;">
+                                <div>
+                                    <div style="font-weight: 700; font-size: 0.9rem; color: var(--heading-text);">Organic Bodysuit</div>
+                                    <div style="font-size: 0.75rem; color: var(--heading-text); opacity: 0.8; font-weight: 600;">100% Breathable Cotton</div>
+                                </div>
+                            </div>
+
+                            <!-- Overlapping Floating Image Card 2: Gentle Swaddle -->
+                            <div style="position: absolute; top: 30px; left: -15px; background: var(--card-bg); padding: 0.85rem 1.25rem; border-radius: 20px; display: flex; align-items: center; gap: 0.85rem; box-shadow: 0 12px 30px rgba(0,0,0,0.1); border: 2px solid var(--secondary); z-index: 3;" class="float-bob">
+                                <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=150&q=80" alt="Soft Baby Swaddle" style="width: 50px; height: 50px; border-radius: 14px; object-fit: cover;">
+                                <div>
+                                    <div style="font-weight: 700; font-size: 0.9rem; color: var(--heading-text);">Gentle Swaddle</div>
+                                    <div style="font-size: 0.75rem; color: var(--heading-text); opacity: 0.8; font-weight: 600;">Hypoallergenic Softness</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Newborn Essentials (Showcase Must-Have Products) -->
+        <section style="background: var(--bg-secondary, #F5EEF2);">
+            <div class="container">
+                <div class="grid-resp-2" style="align-items: center; gap: 4rem;">
+                    <div class="reveal-zoom" style="display: flex; justify-content: center;">
+                        <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=80" alt="Everyday Newborn Essentials"
+                            style="border-radius: 28px; box-shadow: 0 30px 60px rgba(68,54,64,0.1); max-width: 90%; height: auto; object-fit: cover; border: 4px solid var(--white);">
+                    </div>
+                    <div class="reveal-right">
+                        <span style="color: var(--heading-text); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem;">Thoughtful Comfort</span>
+                        <h2 style="margin: 0.8rem 0 1.25rem;">Newborn Essentials for Little Beginnings</h2>
+                        <p style="font-size: 1.15rem; opacity: 0.85; margin-bottom: 2.25rem; line-height: 1.7;">From the first cuddle to sweet nursery slumber, discover carefully selected must-have products created for your newborn's delicate comfort and care.</p>
+                        
+                        <div style="margin-bottom: 2.5rem; display: flex; flex-direction: column; gap: 1.5rem;">
+                            <div style="display: flex; gap: 1.25rem; align-items: flex-start;">
+                                <div style="background: var(--primary); color: var(--heading-text); width: 42px; height: 42px; min-width: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem;">
+                                    1</div>
+                                <div>
+                                    <h4 style="font-size: 1.2rem; margin-bottom: 0.35rem; color: var(--heading-text);">Organic Cotton Bodysuit & Swaddle Blanket</h4>
+                                    <p style="opacity: 0.8; font-size: 0.95rem;">Pure GOTS-certified organic cotton designed with flat seams and nickel-free snaps for the most delicate skin.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 1.25rem; align-items: flex-start;">
+                                <div style="background: var(--secondary); color: var(--heading-text); width: 42px; height: 42px; min-width: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem;">
+                                    2</div>
+                                <div>
+                                    <h4 style="font-size: 1.2rem; margin-bottom: 0.35rem; color: var(--heading-text);">Soft Baby Sleeping Set & Gentle Blanket</h4>
+                                    <p style="opacity: 0.8; font-size: 0.95rem;">Naturally breathable knit blankets and temperature-regulating sleep sets promoting restful, sound slumber.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 1.25rem; align-items: flex-start;">
+                                <div style="background: var(--accent); color: var(--heading-text); width: 42px; height: 42px; min-width: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem;">
+                                    3</div>
+                                <div>
+                                    <h4 style="font-size: 1.2rem; margin-bottom: 0.35rem; color: var(--heading-text);">Baby Hooded Towel & Newborn Care Kit</h4>
+                                    <p style="opacity: 0.8; font-size: 0.95rem;">Ultra-absorbent bamboo hooded towels paired with gentle grooming kits to make bathtime pure bonding joy.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="products.html" class="btn btn-primary" style="padding: 1rem 2.5rem;">Explore All Products</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Shop by Category -->
+        <section style="background: var(--bg);">
+            <div class="container">
+                <div class="reveal-up" style="text-align: center; margin-bottom: 4rem;">
+                    <span style="color: var(--heading-text); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem;">Thoughtful Collections</span>
+                    <h2 style="margin-top: 0.8rem; margin-bottom: 1rem;">Shop by Category</h2>
+                    <p style="font-weight: 400; font-size: 1.1rem; opacity: 0.85; max-width: 650px; margin: 0 auto;">Carefully chosen essentials designed for newborn gentleness, cozy nurseries, and loving motherhood.</p>
+                </div>
+                <div class="grid-3 cards-row-aligned stagger-container" style="gap: 2rem;">
+                    <!-- Category 1: Baby Clothing -->
+                    <div class="card card-equal-height reveal-left">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80"
+                                alt="Baby Clothing Collection">
+                        </div>
+                        <div class="card-body">
+                            <h3>Baby Clothing</h3>
+                            <p>Organic cotton bodysuits, gentle rompers, cozy sleepwear, newborn socks, scratch mittens, and baby caps.</p>
+                            <a href="products.html#clothing" class="card-cta btn-link" style="margin-top: auto;">Explore Clothing <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Category 2: Baby Skincare -->
+                    <div class="card card-equal-height reveal">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+                                alt="Baby Skincare Collection">
+                        </div>
+                        <div class="card-body">
+                            <h3>Baby Skincare</h3>
+                            <p>Dermatologist-tested baby lotion, gentle body wash, tear-free shampoo, and protective diaper rash creams.</p>
+                            <a href="products.html#skincare" class="card-cta btn-link" style="margin-top: auto;">Explore Skincare <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Category 3: Bath Essentials -->
+                    <div class="card card-equal-height reveal-right">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=80"
+                                alt="Bath Essentials Collection">
+                        </div>
+                        <div class="card-body">
+                            <h3>Bath Essentials</h3>
+                            <p>Ultra-plush animal hooded towels, organic washcloth sets, natural sea sponges, and soothing bath salts.</p>
+                            <a href="products.html#bath" class="card-cta btn-link" style="margin-top: auto;">Explore Bath Care <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Category 4: Feeding & Nursing -->
+                    <div class="card card-equal-height reveal-left">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80"
+                                alt="Feeding & Nursing Collection">
+                        </div>
+                        <div class="card-body">
+                            <h3>Feeding & Nursing</h3>
+                            <p>Anti-colic feeding bottles, soft organic bibs, privacy nursing covers, and supportive breastfeeding essentials.</p>
+                            <a href="products.html#feeding" class="card-cta btn-link" style="margin-top: auto;">Explore Feeding <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Category 5: Bedding & Blankets -->
+                    <div class="card card-equal-height reveal">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1510154221590-ff63e90a136f?auto=format&fit=crop&w=800&q=80"
+                                alt="Bedding & Blankets Collection">
+                        </div>
+                        <div class="card-body">
+                            <h3>Bedding & Blankets</h3>
+                            <p>Breathable bamboo swaddle blankets, soft cable-knit crib blankets, organic sheets, and nursery cushions.</p>
+                            <a href="products.html#bedding" class="card-cta btn-link" style="margin-top: auto;">Explore Bedding <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Category 6: Maternity & Mom Care -->
+                    <div class="card card-equal-height reveal-right">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80"
+                                alt="Maternity & Mom Care Collection">
+                        </div>
+                        <div class="card-body">
+                            <h3>Maternity & Mom Care</h3>
+                            <p>Comfortable maternity dresses, soft nursing bras, bump-support loungewear, and postpartum recovery care.</p>
+                            <a href="products.html#maternity" class="card-cta btn-link" style="margin-top: auto;">Explore Mom Care <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Bestsellers (Highlight Popular Baby Products) -->
+        <section style="background: var(--bg-secondary, #F5EEF2); padding: 6rem 0;">
+            <div class="container">
+                <div class="reveal-up" style="text-align: center; margin-bottom: 3.5rem;">
+                    <span class="badge-summer" style="margin-bottom: 0.85rem;">
+                        <i data-lucide="award" style="width: 16px;"></i> PARENT FAVORITES
+                    </span>
+                    <h2 style="margin-bottom: 1rem;">Bestsellers for Little Miracles</h2>
+                    <p style="font-size: 1.1rem; max-width: 650px; margin: 0 auto; color: var(--body-text);">
+                        Our most loved essentials rated five stars by mothers and pediatric nurses for supreme softness and everyday ease.
+                    </p>
+                </div>
+
+                <div class="bestseller-grid stagger-container">
+                    <!-- Bestseller 1 -->
+                    <div class="product-card card-equal-height reveal-left">
+                        <div class="product-card-img-wrap">
+                            <span class="product-badge-float badge-summer">BESTSELLER</span>
+                            <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=600&q=80" alt="Organic Kimono Bodysuit 3-Pack" class="product-card-img">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="product-card-cat">Baby Clothing</span>
+                            <h3 class="product-card-title">Organic Kimono Bodysuit (3-Pack)</h3>
+                            <div style="display: flex; gap: 0.2rem; color: var(--highlight); margin-bottom: 0.75rem;">
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <span style="font-size: 0.82rem; font-weight: 700; color: var(--heading-text); margin-left: 0.35rem;">4.9 (184)</span>
+                            </div>
+                            <p class="product-card-desc">GOTS organic cotton with wrap-around kimono snaps for fuss-free newborn changing.</p>
+                            <div class="product-card-footer">
+                                <div class="product-card-price">$28 <span>/ 3-pack</span></div>
+                                <a href="contact.html" class="btn btn-primary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bestseller 2 -->
+                    <div class="product-card card-equal-height reveal-up">
+                        <div class="product-card-img-wrap">
+                            <span class="product-badge-float badge-forest">100% BAMBOO</span>
+                            <img src="https://images.unsplash.com/photo-1505377059067-e285a7bac49b?auto=format&fit=crop&w=600&q=80" alt="Breathable Bamboo Swaddle Blanket" class="product-card-img">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="product-card-cat">Nursery Bedding</span>
+                            <h3 class="product-card-title">Breathable Bamboo Swaddle Blanket</h3>
+                            <div style="display: flex; gap: 0.2rem; color: var(--highlight); margin-bottom: 0.75rem;">
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <span style="font-size: 0.82rem; font-weight: 700; color: var(--heading-text); margin-left: 0.35rem;">5.0 (240)</span>
+                            </div>
+                            <p class="product-card-desc">Silky bamboo rayon regulating newborn temperature for uninterrupted, peaceful sleep.</p>
+                            <div class="product-card-footer">
+                                <div class="product-card-price">$24 <span>/ each</span></div>
+                                <a href="contact.html" class="btn btn-primary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bestseller 3 -->
+                    <div class="product-card card-equal-height reveal-up">
+                        <div class="product-card-img-wrap">
+                            <span class="product-badge-float badge-teal">PEDIATRIC TESTED</span>
+                            <img src="https://images.unsplash.com/photo-1607344645866-009c320c5ab8?auto=format&fit=crop&w=600&q=80" alt="Calming Calendula Baby Wash Duo" class="product-card-img">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="product-card-cat">Baby Skincare</span>
+                            <h3 class="product-card-title">Calendula Baby Wash & Lotion Duo</h3>
+                            <div style="display: flex; gap: 0.2rem; color: var(--highlight); margin-bottom: 0.75rem;">
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <span style="font-size: 0.82rem; font-weight: 700; color: var(--heading-text); margin-left: 0.35rem;">4.9 (135)</span>
+                            </div>
+                            <p class="product-card-desc">Hypoallergenic tear-free botanical cleanser paired with nourishing barrier baby lotion.</p>
+                            <div class="product-card-footer">
+                                <div class="product-card-price">$32 <span>/ duo set</span></div>
+                                <a href="contact.html" class="btn btn-primary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bestseller 4 -->
+                    <div class="product-card card-equal-height reveal-right">
+                        <div class="product-card-img-wrap">
+                            <span class="product-badge-float badge-orange">HEIRLOOM QUALITY</span>
+                            <img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?auto=format&fit=crop&w=600&q=80" alt="Natural Beechwood Teether & Booties" class="product-card-img">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="product-card-cat">Baby Care Accessories</span>
+                            <h3 class="product-card-title">Knit Booties & Wooden Teether</h3>
+                            <div style="display: flex; gap: 0.2rem; color: var(--highlight); margin-bottom: 0.75rem;">
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <i data-lucide="star" style="width: 16px; height: 16px;"></i>
+                                <span style="font-size: 0.82rem; font-weight: 700; color: var(--heading-text); margin-left: 0.35rem;">4.8 (98)</span>
+                            </div>
+                            <p class="product-card-desc">Hand-knitted pure merino booties paired with an untreated natural beechwood teething ring.</p>
+                            <div class="product-card-footer">
+                                <div class="product-card-price">$22 <span>/ set</span></div>
+                                <a href="contact.html" class="btn btn-primary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Why Choose Us Section -->
+        <section style="background: var(--card-bg);">
+            <div class="container">
+                <div class="grid-resp-2 grid-reverse" style="align-items: center; gap: 4rem;">
+                    <div class="reveal-left">
+                        <span style="color: var(--heading-text); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem;">Our Promise to Families</span>
+                        <h2 style="margin: 0.8rem 0 1.5rem;">Why Mothers & Families Choose Us</h2>
+                        <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.85; line-height: 1.7;">We believe that the earliest days of life deserve the purest touch. Every item in our boutique is thoughtfully selected for safety, comfort and enduring quality.</p>
+                        
+                        <ul style="margin-bottom: 2.5rem; display: flex; flex-direction: column; gap: 1.25rem;">
+                            <li style="display: flex; align-items: flex-start; gap: 1rem;">
+                                <i data-lucide="check-circle" style="color: var(--primary); min-width: 22px; margin-top: 2px;"></i>
+                                <div>
+                                    <strong style="color: var(--heading-text); font-size: 1.05rem;">Gentle & Baby-Friendly Products</strong>
+                                    <p style="opacity: 0.8; font-size: 0.95rem; margin-top: 0.2rem;">Free from toxic dyes, parabens, phthalates and harsh synthetics for complete peace of mind.</p>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; gap: 1rem;">
+                                <i data-lucide="check-circle" style="color: var(--secondary); min-width: 22px; margin-top: 2px;"></i>
+                                <div>
+                                    <strong style="color: var(--heading-text); font-size: 1.05rem;">Carefully Selected Essentials</strong>
+                                    <p style="opacity: 0.8; font-size: 0.95rem; margin-top: 0.2rem;">Vetted by pediatric dermatologists and experienced mothers for genuine daily utility.</p>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; gap: 1rem;">
+                                <i data-lucide="check-circle" style="color: var(--accent); min-width: 22px; margin-top: 2px;"></i>
+                                <div>
+                                    <strong style="color: var(--heading-text); font-size: 1.05rem;">Comfort for Moms and Babies</strong>
+                                    <p style="opacity: 0.8; font-size: 0.95rem; margin-top: 0.2rem;">Holistic support through every trimester, peaceful nursing sessions, and newborn bonding.</p>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; gap: 1rem;">
+                                <i data-lucide="check-circle" style="color: var(--highlight); min-width: 22px; margin-top: 2px;"></i>
+                                <div>
+                                    <strong style="color: var(--heading-text); font-size: 1.05rem;">Beautiful Gift Collections</strong>
+                                    <p style="opacity: 0.8; font-size: 0.95rem; margin-top: 0.2rem;">Delicately packaged in signature keepsake gift boxes with complimentary personalized notes.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="about.html" class="btn btn-primary" style="padding: 1rem 2.8rem;">Learn About Our Standards</a>
+                    </div>
+                    <div class="blur-in" style="display: flex; justify-content: center;">
+                        <img src="https://images.unsplash.com/photo-1544126592-807ade215a0b?auto=format&fit=crop&w=800&q=80" alt="Comfort and Care for Newborn and Mother"
+                            style="border-radius: 28px; border: 1px solid var(--border); box-shadow: 0 40px 80px -20px rgba(68,54,64,0.15); max-width: 90%; height: auto; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Nursery Gallery / Everyday Little Wonders (With High Tag Contrast) -->
+        <section style="background: var(--bg); padding: 5rem 0 3rem; overflow: hidden;">
+            <div class="container">
+                <div class="reveal-up" style="text-align: center; margin-bottom: 2.5rem;">
+                    <span class="badge-summer float-bob"><i data-lucide="sparkles" style="width: 16px; color: var(--heading-text);"></i> Nursery Gallery</span>
+                    <h2 style="margin-top: 0.8rem;">Everyday Little Wonders</h2>
+                    <p style="opacity: 0.8; font-size: 1.05rem;">A glimpse into moments of gentle care, soft textures, and sweet newborn dreams.</p>
+                </div>
+
+                <div class="photostrip-grid reveal-zoom">
+                    <!-- Photo 1: Baby Clothing -->
+                    <div class="photostrip-card">
+                        <img src="https://images.unsplash.com/photo-1516585427167-9f4af9627e6c?auto=format&fit=crop&w=800&q=80" alt="Organic Baby Romper in Soft Pastel">
+                        <div class="photostrip-overlay">
+                            <span class="badge-orange" style="font-size: 0.8rem;">Baby Clothing</span>
+                            <h4 style="margin-top: 0.5rem; color: #FFFFFF !important;">Organic Cotton Romper</h4>
+                        </div>
+                    </div>
+                    <!-- Photo 2: Nursery Bedding -->
+                    <div class="photostrip-card">
+                        <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=800&q=80" alt="Cozy Nursery Bedding and Swaddle">
+                        <div class="photostrip-overlay">
+                            <span class="badge-teal" style="font-size: 0.8rem;">Nursery Bedding</span>
+                            <h4 style="margin-top: 0.5rem; color: #FFFFFF !important;">Newborn Swaddle Blanket</h4>
+                        </div>
+                    </div>
+                    <!-- Photo 3: Gentle Bath -->
+                    <div class="photostrip-card">
+                        <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=800&q=80" alt="Gentle Baby Bathtime">
+                        <div class="photostrip-overlay">
+                            <span class="badge-summer" style="font-size: 0.8rem;">Gentle Bath</span>
+                            <h4 style="margin-top: 0.5rem; color: #FFFFFF !important;">Baby Hooded Towel</h4>
+                        </div>
+                    </div>
+                    <!-- Photo 4: Skincare & Grooming -->
+                    <div class="photostrip-card">
+                        <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=800&q=80" alt="Hypoallergenic Baby Skincare">
+                        <div class="photostrip-overlay">
+                            <span class="badge-forest" style="font-size: 0.8rem;">Skincare & Grooming</span>
+                            <h4 style="margin-top: 0.5rem; color: #FFFFFF !important;">Newborn Care Kit</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Featured Gift Sets -->
+        <section style="background: var(--bg-secondary, #F5EEF2); padding: 6rem 0;">
+            <div class="container">
+                <div class="reveal-up" style="text-align: center; margin-bottom: 4rem;">
+                    <span class="badge-orange" style="margin-bottom: 0.85rem;">
+                        <i data-lucide="gift" style="width: 16px;"></i> SIGNATURE COLLECTIONS
+                    </span>
+                    <h2 style="margin-bottom: 1rem;">Featured Baby Gift Sets</h2>
+                    <p style="font-size: 1.1rem; max-width: 650px; margin: 0 auto; color: var(--body-text);">
+                        Celebrate new arrivals with lovingly arranged gift boxes, hand-tied satin ribbons, and complimentary custom greeting notes.
+                    </p>
+                </div>
+
+                <div class="gift-collections-grid cards-row-aligned stagger-container">
+                    <!-- Gift Set 1 -->
+                    <div class="gift-collection-card card-equal-height reveal-left">
+                        <div class="gift-card-img-wrap">
+                            <span class="product-badge-float badge-teal">NEWBORN FAVORITE</span>
+                            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80" alt="Newborn Welcome Gift Box" class="gift-card-img">
+                        </div>
+                        <div class="gift-card-content">
+                            <span class="product-card-cat">GIFT SET #01</span>
+                            <h3 style="font-size: 1.4rem; color: var(--heading-text); margin-bottom: 0.5rem;">Newborn Welcome Gift Box</h3>
+                            <p style="font-size: 0.92rem; color: var(--body-text); opacity: 0.85; margin-bottom: 1.25rem;">A heartfelt starter bundle welcoming the newest arrival with organic comfort and sensory joy.</p>
+                            <ul class="gift-items-list">
+                                <li><i data-lucide="check" style="color: var(--primary);"></i> Organic cotton kimono bodysuit</li>
+                                <li><i data-lucide="check" style="color: var(--primary);"></i> Breathable bamboo swaddle blanket</li>
+                                <li><i data-lucide="check" style="color: var(--primary);"></i> Natural beechwood sensory rattle</li>
+                                <li><i data-lucide="check" style="color: var(--primary);"></i> Handwritten keepsake milestone card</li>
+                            </ul>
+                            <div class="product-card-footer">
+                                <div class="product-card-price">$65 <span>/ gift box</span></div>
+                                <a href="gift-sets.html" class="btn btn-primary" style="padding: 0.7rem 1.4rem; font-size: 0.92rem;">Explore Set</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gift Set 2 -->
+                    <div class="gift-collection-card card-equal-height reveal-up" style="border: 2px solid var(--primary); box-shadow: 0 16px 40px rgba(216, 180, 200, 0.3);">
+                        <div class="gift-card-img-wrap">
+                            <span class="product-badge-float badge-summer">MOST POPULAR</span>
+                            <img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&w=800&q=80" alt="Baby Shower Celebration Hamper" class="gift-card-img">
+                        </div>
+                        <div class="gift-card-content">
+                            <span class="product-card-cat">GIFT SET #02</span>
+                            <h3 style="font-size: 1.4rem; color: var(--heading-text); margin-bottom: 0.5rem;">Baby Shower Celebrations Hamper</h3>
+                            <p style="font-size: 0.92rem; color: var(--body-text); opacity: 0.85; margin-bottom: 1.25rem;">Our most beloved centerpiece hamper blending sleepwear, gentle bath care, and cuddle plush.</p>
+                            <ul class="gift-items-list">
+                                <li><i data-lucide="check" style="color: var(--primary);"></i> Organic sleeper & knit baby booties</li>
+                                <li><i data-lucide="check" style="color: var(--primary);"></i> Gentle foaming wash & baby lotion</li>
+                                <li><i data-lucide="check" style="color: var(--primary);"></i> Organic plush cuddle bunny toy</li>
+                                <li><i data-lucide="check" style="color: var(--primary);"></i> Premium embossed ribbon keepsake hamper</li>
+                            </ul>
+                            <div class="product-card-footer">
+                                <div class="product-card-price">$115 <span>/ hamper</span></div>
+                                <a href="gift-sets.html" class="btn btn-primary" style="padding: 0.7rem 1.4rem; font-size: 0.92rem;">Explore Set</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gift Set 3 -->
+                    <div class="gift-collection-card card-equal-height reveal-right">
+                        <div class="gift-card-img-wrap">
+                            <span class="product-badge-float badge-forest">HEIRLOOM LUXURY</span>
+                            <img src="https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=800&q=80" alt="Luxury Heirloom Keepsake Chest" class="gift-card-img">
+                        </div>
+                        <div class="gift-card-content">
+                            <span class="product-card-cat">GIFT SET #03</span>
+                            <h3 style="font-size: 1.4rem; color: var(--heading-text); margin-bottom: 0.5rem;">Luxury Heirloom Gift Trunk</h3>
+                            <p style="font-size: 0.92rem; color: var(--body-text); opacity: 0.85; margin-bottom: 1.25rem;">An unforgettable luxury gift trunk featuring handwoven basketry, knit blankets, and heirloom tokens.</p>
+                            <ul class="gift-items-list">
+                                <li><i data-lucide="check" style="color: var(--primary);"></i> Handwoven keepsake storage trunk</li>
+                                <li><i data-lucide="check" style="color: var(--primary);"></i> Cashmere-soft cable knit blanket</li>
+                                <li><i data-lucide="check" style="color: var(--primary);"></i> 5-piece organic layette clothing set</li>
+                                <li><i data-lucide="check" style="color: var(--primary);"></i> Silver-plated milestone memory coin</li>
+                            </ul>
+                            <div class="product-card-footer">
+                                <div class="product-card-price">$165 <span>/ trunk</span></div>
+                                <a href="gift-sets.html" class="btn btn-primary" style="padding: 0.7rem 1.4rem; font-size: 0.92rem;">Explore Set</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Customer Testimonials (Aligned Card Heights & Positioning) -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="reveal-zoom" style="text-align: center; margin-bottom: 4.5rem;">
+                    <span class="badge-teal" style="margin-bottom: 0.85rem;"><i data-lucide="heart" style="width: 16px;"></i> LOVING PARENTS</span>
+                    <h2 style="margin-bottom: 1rem;">Words of Warmth from Loving Parents</h2>
+                    <p class="subtitle" style="font-weight: 400; font-size: 1.1rem; opacity: 0.85;">Cherished moments and gentle comfort shared by families who trust our boutique.</p>
+                </div>
+                <div class="grid-3 cards-row-aligned stagger-container">
+                    <!-- Testimonial 1 -->
+                    <div class="reveal-zoom testimonial-card-item card-equal-height">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+                            alt="Elena & Baby Maya" class="testimonial-avatar">
+                        <div class="testimonial-stars">
+                            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i
+                                data-lucide="star"></i><i data-lucide="star"></i>
+                        </div>
+                        <p class="testimonial-text">"The organic cotton bodysuits and swaddle blankets are impossibly soft. My newborn slept so peacefully from night one. An absolute baby registry must-have!"</p>
+                        <h4 class="testimonial-author">Elena & Baby Maya</h4>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="reveal-zoom testimonial-card-item card-equal-height">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80"
+                            alt="Sophia Laurent" class="testimonial-avatar">
+                        <div class="testimonial-stars">
+                            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i
+                                data-lucide="star"></i><i data-lucide="star"></i>
+                        </div>
+                        <p class="testimonial-text">"We received the Baby Shower Gift Set from close friends, and the packaging was breathtaking. The gentle baby wash and soothing balm became our daily routine."</p>
+                        <h4 class="testimonial-author">Sophia Laurent</h4>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="reveal-zoom testimonial-card-item card-equal-height">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
+                            alt="David & Clara Miller" class="testimonial-avatar">
+                        <div class="testimonial-stars">
+                            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i
+                                data-lucide="star"></i><i data-lucide="star"></i>
+                        </div>
+                        <p class="testimonial-text">"Exceptional customer service! They helped us choose hypoallergenic nursery essentials and a custom maternity hamper. Pure elegance and tender care."</p>
+                        <h4 class="testimonial-author">David & Clara Miller</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: Final CTA – Explore Baby Essentials -->
+        <section
+            style="padding: 8rem 0; background: linear-gradient(rgba(68, 54, 64, 0.88), rgba(68, 54, 64, 0.88)), url('https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover; position: relative;">
+            <div class="container" style="text-align: center; color: white;">
+                <div class="reveal-zoom" style="max-width: 820px; margin: 0 auto;">
+                    <span class="badge-summer" style="background: var(--primary); color: var(--heading-text); font-weight: 700; margin-bottom: 1.5rem; border: none;">CURATED BABY ESSENTIALS</span>
+                    <h2 style="color: #FFFFFF !important; margin: 1rem 0 1.5rem; font-size: clamp(2.5rem, 5.5vw, 3.8rem);">Explore Baby Essentials</h2>
+                    <p
+                        style="font-size: 1.25rem; margin-bottom: 3rem; opacity: 0.95; max-width: 700px; margin-left: auto; margin-right: auto; color: #FFF9F5 !important; line-height: 1.7;">
+                        Celebrate new arrivals with thoughtfully selected essentials and maternity must-haves, crafted to bring comfort to babies and ease to mothers.</p>
+                    <div style="display: flex; gap: 1.25rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="products.html" class="btn btn-primary"
+                            style="padding: 1.1rem 3.5rem; font-size: 1.2rem; background: var(--primary); color: var(--heading-text) !important; border-radius: 50px; border: none; display: inline-block;">Shop Now</a>
+                        <a href="gift-sets.html" class="btn btn-secondary"
+                            style="padding: 1.1rem 3.2rem; font-size: 1.2rem; border-radius: 50px; display: inline-block;">Explore Gift Sets</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 🗓️ POPUP -->
+    <div id="booking-popup" class="popup-overlay">
+        <div class="popup-card">
+            <button class="close-popup"
+                style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; cursor: pointer; color: var(--heading-text);"><i
+                    data-lucide="x"></i></button>
+            <h3 style="font-size: 1.75rem; margin-bottom: 0.75rem; color: var(--heading-text);">Request a Gift Consultation</h3>
+            <p style="opacity: 0.8; margin-bottom: 2rem; font-size: 0.95rem;">Have questions about baby shower gifts or nursery bundles? Let our specialists help you curate the perfect set.</p>
+            <form style="display: flex; flex-direction: column; gap: 1rem;">
+                <input type="text" placeholder="Your Full Name" class="auth-input" style="margin:0; width: 100%; padding: 0.85rem 1.25rem; border-radius: 14px; border: 1px solid var(--border); background-color: var(--bg); font-family: inherit; color: var(--text);">
+                <input type="email" placeholder="Email Address" class="auth-input" style="margin:0; width: 100%; padding: 0.85rem 1.25rem; border-radius: 14px; border: 1px solid var(--border); background-color: var(--bg); font-family: inherit; color: var(--text);">
+                <select class="auth-input" style="margin:0; width:100%; padding: 0.85rem 1.25rem; border-radius: 14px; font-family: inherit;">
+                    <option>Select Gift or Product Collection</option>
+                    <option>Newborn Welcome Gift Box</option>
+                    <option>Baby Shower Gift Set</option>
+                    <option>Organic Baby Essentials Box</option>
+                    <option>New Mom Care Package</option>
+                    <option>Baby Bath & Care Bundle</option>
+                    <option>Luxury Newborn Gift Hamper</option>
+                </select>
+                <textarea rows="3" placeholder="Special requests or recipient note..." style="width: 100%; padding: 0.85rem 1.25rem; border-radius: 14px; border: 1px solid var(--border); background-color: var(--bg); font-family: inherit; color: var(--text); resize: vertical;"></textarea>
+                <button type="button" class="btn btn-primary" style="width: 100%; padding: 0.95rem;">Send Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 🦶 FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid" style="margin-bottom: 4rem;">
+                <div>
+                    <a href="index.html" class="footer-logo">
+                        <i data-lucide="baby"></i> Baby Care & Maternity
+                    </a>
+                    <p style="opacity: 0.8; margin-bottom: 2rem; max-width: 320px; font-size: 0.95rem; line-height: 1.7; color: var(--soft-sand);">Thoughtfully selected baby essentials and maternity must-haves, crafted to make every moment of motherhood gentle and special.</p>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><svg viewBox="0 0 24 24" style="width: 18px; height: 18px; fill: currentColor; display: inline-block; vertical-align: middle;"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a>
+                        <a href="#"><i data-lucide="heart"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1.5rem; color: #FFFFFF;">Collections</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 0.75rem; opacity: 0.85;">
+                        <li><a href="products.html">Baby Clothing</a></li>
+                        <li><a href="products.html">Newborn Essentials</a></li>
+                        <li><a href="products.html">Baby Skincare</a></li>
+                        <li><a href="products.html">Feeding & Nursing</a></li>
+                        <li><a href="products.html">Maternity & Mom Care</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1.5rem; color: #FFFFFF;">Quick Links</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 0.75rem; opacity: 0.85;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gift-sets.html">Gift Sets</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1.5rem; color: #FFFFFF;">Customer Care</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 0.75rem; opacity: 0.85;">
+                        <li><i data-lucide="map-pin" style="color: var(--primary);"></i> 450 Little Sprout Way, New York, NY</li>
+                        <li><i data-lucide="phone" style="color: var(--primary);"></i> (800) 245-BABY</li>
+                        <li><i data-lucide="mail" style="color: var(--primary);"></i> support@babycarestore.com</li>
+                        <li><i data-lucide="clock" style="color: var(--primary);"></i> Mon – Sat: 9:00 AM – 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.15); padding-top: 2rem; text-align: center; opacity: 0.7; font-size: 0.9rem; color: var(--soft-sand);">
+                &copy; 2026 Baby Care & Maternity Products Store. All rights reserved. Gentle comfort for little miracles.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ⬆️ BACK TO TOP -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top">
+        <i data-lucide="chevron-up"></i>
+    </button>
+
+    <script src="scripts/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+        });
+    </script>
+</body>
+
+</html>

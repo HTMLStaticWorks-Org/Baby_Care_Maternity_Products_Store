@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Baby Care & Maternity Store</title>
+    <meta name="description"
+        content="Have questions about our baby products, maternity essentials or gift collections? We'd love to help you find exactly what you need.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.364.0/dist/umd/lucide.min.js"></script>
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.6fr;
+            gap: 4rem;
+            align-items: stretch;
+        }
+
+        @media (max-width: 640px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 🧭 HEADER -->
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <a href="index.html" class="logo-brand">
+                <i data-lucide="baby"></i> Baby Care & Maternity
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="home-2.html">Home 2</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="services.html">Services</a>
+                <a href="gift-sets.html">Gift Sets</a>
+                <a href="contact.html" class="active">Contact</a>
+                <!-- Toggles inside menu for mobile ONLY -->
+                <div class="mobile-show" style="gap: 1.5rem; margin-top: 1rem; margin-bottom: 2rem;">
+                    <button id="theme-toggle-mob" class="btn" title="Change Theme"
+                        style="background: none; color: inherit; padding: 0.75rem; border: 1px solid var(--border); border-radius: 12px; flex: 1;"><i
+                            data-lucide="moon"></i></button>
+                    <button id="rtl-toggle-mob" class="btn"
+                        style="background: none; color: inherit; padding: 0.75rem; border: 1px solid var(--border); border-radius: 12px; flex: 1;">RTL</button>
+                </div>
+
+                <a href="contact.html" class="btn btn-primary mobile-show"
+                    style="margin-top: 1rem; text-align: center;">Send Enquiry</a>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="btn-nav-utility mobile-hide" title="Change Theme">
+                    <i data-lucide="moon"></i>
+                </button>
+                <button id="rtl-toggle" class="btn-nav-utility mobile-hide" title="Switch Direction">
+                    <span>RTL</span>
+                </button>
+                <button id="mobile-menu-trigger"
+                    style="background: none; border: none; cursor: pointer; color: inherit; padding: 0.5rem;"
+                    aria-label="Toggle Navigation Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+                <a href="contact.html" class="btn btn-primary mobile-hide">Send Enquiry</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Dedicated Contact Page Hero Banner -->
+        <section class="hero-split" style="min-height: 70vh; padding: 8.5rem 0 4.5rem;">
+            <div class="blob-bg-1"
+                style="top: -5%; left: -5%; background: radial-gradient(circle, rgba(216, 180, 200, 0.35) 0%, transparent 70%);">
+            </div>
+            <div class="blob-bg-2"
+                style="bottom: 0%; right: -5%; background: radial-gradient(circle, rgba(184, 201, 216, 0.35) 0%, transparent 70%);">
+            </div>
+
+            <div class="container" style="position: relative; z-index: 2;">
+                <div class="hero-split-grid">
+                    <!-- Left Hero Content & Social Media Icons -->
+                    <div class="reveal-left">
+                        <div
+                            style="margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.85rem; flex-wrap: wrap;">
+                            <span class="badge-summer float-bob">
+                                <i data-lucide="headphones" style="width: 16px;"></i> WE'RE HERE TO HELP
+                            </span>
+                            <span class="badge-teal">Personalized Parent Care</span>
+                        </div>
+
+                        <h1 style="margin-bottom: 1.25rem; color: var(--heading-text); line-height: 1.15;">
+                            We're Here for You & Your Little One
+                        </h1>
+
+                        <p
+                            style="font-size: 1.18rem; line-height: 1.75; margin-bottom: 2rem; max-width: 560px; color: var(--body-text);">
+                            Have questions about our baby products, maternity essentials or gift collections? We'd love
+                            to help you find exactly what you need.
+                        </p>
+
+                        <div class="hero-cta-group" style="display: flex; gap: 1.25rem; flex-wrap: wrap; margin-bottom: 2.25rem;">
+                            <a href="#enquiry-section" class="btn btn-primary hero-btn">Send an Enquiry</a>
+                            <a href="gift-sets.html" class="btn btn-secondary hero-btn">Explore Gift Sets</a>
+                        </div>
+
+                        <!-- Social Media Icons in Hero -->
+                        <div>
+                            <div style="font-size: 0.82rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 0.85rem; color: var(--heading-text);">
+                                Connect With Our Boutique Community
+                            </div>
+                            <div class="contact-social-links">
+                                <a href="#" aria-label="Instagram" title="Instagram"><i data-lucide="instagram"></i></a>
+                                <a href="#" aria-label="Facebook" title="Facebook"><i data-lucide="facebook"></i></a>
+                                <a href="#" aria-label="X (Twitter)" title="X (Twitter)">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                                    </svg>
+                                </a>
+                                <a href="#" aria-label="YouTube" title="YouTube"><i data-lucide="youtube"></i></a>
+                                <a href="#" aria-label="Community Favorites" title="Community Favorites"><i data-lucide="heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Hero Visual Card -->
+                    <div class="reveal-right" style="position: relative;">
+                        <div style="position: relative; border-radius: 32px; overflow: hidden; box-shadow: 0 24px 60px rgba(68, 54, 64, 0.14); border: 4px solid var(--white);">
+                            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=900&q=80"
+                                alt="Mother and Newborn Baby Care Support"
+                                style="width: 100%; height: 400px; object-fit: cover;">
+
+                            <!-- Floating Support Badge -->
+                            <div style="position: absolute; bottom: 20px; left: 20px; background: var(--card-bg); padding: 1rem 1.35rem; border-radius: 20px; display: flex; align-items: center; gap: 0.9rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); border: 2px solid var(--primary);">
+                                <div style="width: 44px; height: 44px; border-radius: 14px; background: var(--primary); display: flex; align-items: center; justify-content: center;">
+                                    <i data-lucide="message-circle-heart" style="color: #443640;"></i>
+                                </div>
+                                <div>
+                                    <div style="font-weight: 800; font-size: 0.95rem; color: var(--heading-text);">Dedicated Parent Advisors</div>
+                                    <div style="font-size: 0.8rem; font-weight: 600; color: var(--body-text);">Mon – Sat • 24-Hour Warm Response</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Contact Information & Enquiry Form -->
+        <section id="enquiry-section" style="padding: 5.5rem 0 6rem; background: var(--bg-secondary, #F5EEF2); position: relative; overflow: hidden;">
+            <div class="container" style="position: relative; z-index: 2;">
+                <div class="grid-resp-2" style="align-items: flex-start; gap: 4rem;">
+                    <!-- Left Advisory Info Column -->
+                    <div class="reveal-left">
+                        <span class="badge-orange" style="margin-bottom: 1rem;">
+                            <i data-lucide="sparkles" style="width: 16px;"></i> STORE & SUPPORT DETAILS
+                        </span>
+                        <h2 style="margin-bottom: 1rem; color: var(--heading-text);">
+                            Get in Touch With Us
+                        </h2>
+                        <p
+                            style="font-size: 1.08rem; line-height: 1.7; margin-bottom: 2rem; font-weight: 400; color: var(--body-text);">
+                            Reach out directly to our customer support specialists for product guidance, maternity sizing, or custom newborn gift hampers.
+                        </p>
+
+                        <!-- Quick Advisory Contact Cards -->
+                        <div class="contact-cards-stack">
+                            <!-- Hotline Pill -->
+                            <div class="contact-pill-card">
+                                <div class="contact-pill-icon"
+                                    style="background: var(--primary); color: #443640;">
+                                    <i data-lucide="phone-call" style="width: 24px; height: 24px;"></i>
+                                </div>
+                                <div class="contact-pill-content">
+                                    <div class="contact-pill-label">Phone Number</div>
+                                    <div class="contact-pill-value">(800) 245-BABY / (800) 245-2229</div>
+                                </div>
+                            </div>
+
+                            <!-- Email Pill -->
+                            <div class="contact-pill-card">
+                                <div class="contact-pill-icon"
+                                    style="background: var(--secondary); color: #443640;">
+                                    <i data-lucide="mail" style="width: 24px; height: 24px;"></i>
+                                </div>
+                                <div class="contact-pill-content">
+                                    <div class="contact-pill-label">Email Support</div>
+                                    <div class="contact-pill-value">support@babycarestore.com</div>
+                                </div>
+                            </div>
+
+                            <!-- Location Pill -->
+                            <div class="contact-pill-card">
+                                <div class="contact-pill-icon"
+                                    style="background: var(--accent); color: #443640;">
+                                    <i data-lucide="map-pin" style="width: 24px; height: 24px;"></i>
+                                </div>
+                                <div class="contact-pill-content">
+                                    <div class="contact-pill-label">Store Information</div>
+                                    <div class="contact-pill-value">450 Little Sprout Way, Manhattan, NY 10001</div>
+                                </div>
+                            </div>
+
+                            <!-- Customer Support / Business Hours Pill -->
+                            <div class="contact-pill-card">
+                                <div class="contact-pill-icon"
+                                    style="background: var(--highlight); color: #443640;">
+                                    <i data-lucide="clock" style="width: 24px; height: 24px;"></i>
+                                </div>
+                                <div class="contact-pill-content">
+                                    <div class="contact-pill-label">Business Hours & Customer Support</div>
+                                    <div class="contact-pill-value">Mon – Fri: 9:00 AM – 6:00 PM | Sat: 10:00 AM – 4:00
+                                        PM</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Media Card inside Contact Details Column -->
+                        <div class="contact-pill-card" style="flex-direction: column; align-items: flex-start; gap: 1rem; padding: 1.5rem;">
+                            <div>
+                                <div class="contact-pill-label">Follow Us on Social Media</div>
+                                <div class="contact-pill-value" style="font-size: 1.05rem;">Join our parenting & newborn care community</div>
+                            </div>
+                            <div class="contact-social-links">
+                                <a href="#" aria-label="Instagram" title="Instagram"><i data-lucide="instagram"></i></a>
+                                <a href="#" aria-label="Facebook" title="Facebook"><i data-lucide="facebook"></i></a>
+                                <a href="#" aria-label="X (Twitter)" title="X (Twitter)">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                                    </svg>
+                                </a>
+                                <a href="#" aria-label="YouTube" title="YouTube"><i data-lucide="youtube"></i></a>
+                                <a href="#" aria-label="Community Favorites" title="Community Favorites"><i data-lucide="heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column Interactive Inquiry Form Box -->
+                    <div class="reveal-right">
+                        <div class="contact-form-box">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                                <div>
+                                    <h3 style="margin: 0; color: var(--heading-text); font-size: 1.5rem;">Send an
+                                        Enquiry</h3>
+                                    <p
+                                        style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.25rem; color: var(--body-text);">
+                                        We respond within 24 hours with tender care.</p>
+                                </div>
+                                <span class="badge-summer float-bob"
+                                    style="background: var(--primary); color: var(--heading-text); font-size: 0.78rem;">
+                                    <i data-lucide="heart" style="width: 14px; color: var(--heading-text);"></i> Parent
+                                    Support
+                                </span>
+                            </div>
+
+                            <form style="display: flex; flex-direction: column; gap: 1.25rem;">
+                                <div>
+                                    <label
+                                        style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 0.4rem; color: var(--heading-text);">Full
+                                        Name</label>
+                                    <input type="text" placeholder="e.g. Sarah Jenkins"
+                                        style="width: 100%; padding: 0.85rem 1.25rem; border-radius: 14px; border: 1px solid var(--border); background: var(--bg); font-family: inherit; font-size: 0.95rem; color: var(--text);">
+                                </div>
+
+                                <div class="contact-form-row">
+                                    <div>
+                                        <label
+                                            style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 0.4rem; color: var(--heading-text);">Email
+                                            Address</label>
+                                        <input type="email" placeholder="sarah@example.com"
+                                            style="width: 100%; padding: 0.85rem 1.25rem; border-radius: 14px; border: 1px solid var(--border); background: var(--bg); font-family: inherit; font-size: 0.95rem; color: var(--text);">
+                                    </div>
+                                    <div>
+                                        <label
+                                            style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 0.4rem; color: var(--heading-text);">Phone
+                                            Number</label>
+                                        <input type="tel" placeholder="(800) 000-0000"
+                                            style="width: 100%; padding: 0.85rem 1.25rem; border-radius: 14px; border: 1px solid var(--border); background: var(--bg); font-family: inherit; font-size: 0.95rem; color: var(--text);">
+                                    </div>
+                                </div>
+
+                                <div class="contact-form-row">
+                                    <div>
+                                        <label
+                                            style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 0.4rem; color: var(--heading-text);">Enquiry
+                                            Category</label>
+                                        <select>
+                                            <option value="baby-products">Baby Products</option>
+                                            <option value="maternity-products">Maternity Products</option>
+                                            <option value="gift-sets">Gift Sets & Hampers</option>
+                                            <option value="product-info">Product Information & Sizing</option>
+                                            <option value="order-enquiry">Order Enquiry</option>
+                                            <option value="general-enquiry">General Parenting Enquiry</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label
+                                            style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 0.4rem; color: var(--heading-text);">Product
+                                            of Interest</label>
+                                        <select>
+                                            <option value="bodysuits">Newborn Bodysuits & Rompers</option>
+                                            <option value="bedding">Swaddles & Nursery Bedding</option>
+                                            <option value="skincare">Baby Skincare & Bath Products</option>
+                                            <option value="feeding">Feeding Bottles & Bibs</option>
+                                            <option value="maternity">Maternity Wear & Pillows</option>
+                                            <option value="gift-boxes">Curated Gift Boxes & Hampers</option>
+                                            <option value="custom">Other / Custom Registry</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label
+                                        style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 0.4rem; color: var(--heading-text);">Message</label>
+                                    <textarea rows="3" placeholder="How can we help you or your little one today?"
+                                        style="width: 100%; padding: 0.85rem 1.25rem; border-radius: 14px; border: 1px solid var(--border); background: var(--bg); font-family: inherit; font-size: 0.95rem; color: var(--text); resize: vertical;"></textarea>
+                                </div>
+
+                                <button type="button" class="btn btn-primary"
+                                    style="width: 100%; justify-content: center; font-size: 1.05rem; padding: 1rem; margin-top: 0.5rem;">Send
+                                    Enquiry</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Google Map Location -->
+        <section style="padding: 0;">
+            <div
+                style="width: 100%; height: 500px; filter: grayscale(0.2) contrast(1.05); opacity: 0.95; transition: all 0.5s ease;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.1583091352!2d-74.11976373946229!3d40.69766374859258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- 🦶 FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid" style="margin-bottom: 4rem;">
+                <div>
+                    <a href="index.html" class="footer-logo">
+                        <i data-lucide="baby"></i> Baby Care & Maternity
+                    </a>
+                    <p
+                        style="opacity: 0.8; margin-bottom: 2rem; max-width: 320px; font-size: 0.95rem; line-height: 1.7; color: var(--soft-sand);">
+                        Thoughtfully selected baby essentials and maternity must-haves, crafted to make every moment of
+                        motherhood gentle and special.</p>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><svg viewBox="0 0 24 24"
+                                style="width: 18px; height: 18px; fill: currentColor; display: inline-block; vertical-align: middle;">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                </path>
+                            </svg></a>
+                        <a href="#"><i data-lucide="heart"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1.5rem; color: #FFFFFF;">Collections</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 0.75rem; opacity: 0.85;">
+                        <li><a href="products.html">Baby Clothing</a></li>
+                        <li><a href="products.html">Newborn Essentials</a></li>
+                        <li><a href="products.html">Baby Skincare</a></li>
+                        <li><a href="products.html">Feeding & Nursing</a></li>
+                        <li><a href="products.html">Maternity & Mom Care</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1.5rem; color: #FFFFFF;">Quick Links</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 0.75rem; opacity: 0.85;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gift-sets.html">Gift Sets</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1.5rem; color: #FFFFFF;">Customer Care</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 0.75rem; opacity: 0.85;">
+                        <li><i data-lucide="map-pin" style="color: var(--primary);"></i> 450 Little Sprout Way, New
+                            York, NY</li>
+                        <li><i data-lucide="phone" style="color: var(--primary);"></i> (800) 245-BABY</li>
+                        <li><i data-lucide="mail" style="color: var(--primary);"></i> support@babycarestore.com</li>
+                        <li><i data-lucide="clock" style="color: var(--primary);"></i> Mon – Sat: 9:00 AM – 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.15); padding-top: 2rem; text-align: center; opacity: 0.7; font-size: 0.9rem; color: var(--soft-sand);">
+                &copy; 2026 Baby Care & Maternity Products Store. All rights reserved. Gentle comfort for little
+                miracles.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ⬆️ BACK TO TOP -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top">
+        <i data-lucide="chevron-up"></i>
+    </button>
+
+    <script src="scripts/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+        });
+    </script>
+</body>
+
+</html>
