@@ -71,7 +71,7 @@
 
     <main>
         <!-- Section 1: Services Showcase Hero -->
-        <section style="padding: 9rem 0 6rem; background: var(--bg); position: relative; overflow: hidden;">
+        <section style="min-height: 85vh; display: flex; align-items: center; padding: 8rem 0 5rem; background: var(--bg); position: relative; overflow: hidden;">
             <div class="blob-bg-1"
                 style="top: -5%; right: -5%; background: radial-gradient(circle, rgba(216, 180, 200, 0.3) 0%, transparent 70%);">
             </div>
@@ -102,59 +102,8 @@
                             gift hampers—we care for every fine detail so you can savor precious moments with your baby.
                         </p>
 
-                        <!-- Quick Service Highlights Grid Strip -->
-                        <div class="service-highlights-grid">
-                            <div class="service-highlight-card">
-                                <div
-                                    style="background: rgba(216, 180, 200, 0.25); width: 42px; height: 42px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--heading-text); flex-shrink: 0;">
-                                    <i data-lucide="clipboard-list" style="width: 22px; height: 22px;"></i>
-                                </div>
-                                <div>
-                                    <h5 style="color: var(--heading-text); font-weight: 700;">Registry Styling</h5>
-                                    <p style="color: var(--body-text); font-size: 0.85rem;">Personalized nursery
-                                        curation</p>
-                                </div>
-                            </div>
-
-                            <div class="service-highlight-card">
-                                <div
-                                    style="background: rgba(184, 201, 216, 0.3); width: 42px; height: 42px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--heading-text); flex-shrink: 0;">
-                                    <i data-lucide="gift" style="width: 22px; height: 22px;"></i>
-                                </div>
-                                <div>
-                                    <h5 style="color: var(--heading-text); font-weight: 700;">Signature Gifting</h5>
-                                    <p style="color: var(--body-text); font-size: 0.85rem;">Custom ribbon keepsake boxes
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="service-highlight-card">
-                                <div
-                                    style="background: rgba(197, 213, 181, 0.35); width: 42px; height: 42px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--heading-text); flex-shrink: 0;">
-                                    <i data-lucide="shield-check" style="width: 22px; height: 22px;"></i>
-                                </div>
-                                <div>
-                                    <h5 style="color: var(--heading-text); font-weight: 700;">Safe Standards</h5>
-                                    <p style="color: var(--body-text); font-size: 0.85rem;">100% GOTS organic certified
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="service-highlight-card">
-                                <div
-                                    style="background: rgba(232, 203, 168, 0.35); width: 42px; height: 42px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--heading-text); flex-shrink: 0;">
-                                    <i data-lucide="truck" style="width: 22px; height: 22px;"></i>
-                                </div>
-                                <div>
-                                    <h5 style="color: var(--heading-text); font-weight: 700;">Gentle Transit</h5>
-                                    <p style="color: var(--body-text); font-size: 0.85rem;">Worldwide doorstep delivery
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="services-hero-btns hero-cta-group"
-                            style="display: flex; gap: 1.25rem; flex-wrap: wrap; align-items: center; margin-top: 2rem;">
+                            style="display: flex; gap: 1.25rem; flex-wrap: wrap; align-items: center;">
                             <a href="#services-list" class="btn btn-primary hero-btn">Explore Bundles</a>
                             <a href="gift-sets.html" class="btn btn-secondary hero-btn">View Gift Sets</a>
                         </div>
@@ -168,19 +117,6 @@
                             <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=800&q=80"
                                 alt="Mother and Baby Care in Action"
                                 style="width: 100%; height: 380px; object-fit: cover; border-radius: 24px;">
-
-                            <!-- Floating Glassmorphism Badge 1 (Top Left) -->
-                            <div class="service-hero-badge-dark float-bob"
-                                style="position: absolute; top: 2.25rem; left: 2.25rem; padding: 0.85rem 1.35rem; border-radius: 20px; display: flex; align-items: center; gap: 0.85rem;">
-                                <div
-                                    style="background: var(--primary); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #443640; flex-shrink: 0;">
-                                    <i data-lucide="shield-check" style="width: 20px; height: 20px; stroke: #443640;"></i>
-                                </div>
-                                <div>
-                                    <div class="badge-title">100% Baby-Safe</div>
-                                    <div class="badge-sub">Pediatric Tested</div>
-                                </div>
-                            </div>
 
                             <!-- Floating Glassmorphism Badge 2 (Bottom Right) -->
                             <div class="service-hero-badge-light reveal-zoom"
@@ -201,7 +137,7 @@
         </section>
 
         <!-- Section: Service Spectrum -->
-        <section id="services-list" style="background: var(--bg);">
+        <section id="services-list" style="background: var(--bg-secondary, #F5EEF2); padding: 6rem 0;">
             <div class="container">
                 <div class="reveal-up" style="text-align: center; margin-bottom: 4.5rem;">
                     <span
@@ -258,7 +194,7 @@
         </section>
 
         <!-- Section: Comparison Table -->
-        <section style="background: var(--bg-secondary, #F5EEF2);">
+        <section style="background: var(--bg); padding: 6rem 0;">
             <div class="container">
                 <div class="reveal-zoom" style="text-align: center; margin-bottom: 4rem;">
                     <span
